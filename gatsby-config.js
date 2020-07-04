@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `blog-coderamos`,
-    description: `some description...`,
+    description: `A blog about frontend development, UX and UI...`,
     author: `@coderamos`,
   },
   plugins: [
@@ -27,8 +27,5 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
