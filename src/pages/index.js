@@ -4,16 +4,22 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import { ThemeProvider } from 'styled-components'
+
+import { GlobalStyle, theme } from '../styles'
+
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>blog-coderamos</h1>
-    <ul>
-      <li>
-        <Link to="about">About</Link>
-      </li>
-    </ul>
-  </Layout>
+  <ThemeProvider theme={theme}>
+    <Layout>
+      <SEO title="Home" />
+      <ul>
+        <li>
+          <Link to="about">About</Link>
+        </li>
+      </ul>
+    </Layout>
+    <GlobalStyle />
+  </ThemeProvider>
 )
 
 export default IndexPage

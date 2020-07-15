@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `blog-coderamos`,
-    description: `A blog about frontend development, UX and UI...`,
+    position: `fron end developer`,
+    description: `A blog about front end development, UX and UI...`,
     author: `@coderamos`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
