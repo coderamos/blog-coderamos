@@ -1,17 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import { LayoutContainer, LayoutContent } from './styles'
-import Profile from '../profile'
+import * as s from './styles'
+import Sidebar from '../sidebar'
 
 const Layout = ({ children }) => {
   return (
-    <LayoutContainer>
-      <aside>
-        <Profile />
-      </aside>
-      <LayoutContent>{children}</LayoutContent>
-    </LayoutContainer>
+    <s.LayoutContainer>
+      <Sidebar />
+      <s.LayoutContent>{children}</s.LayoutContent>
+    </s.LayoutContainer>
   )
 }
 

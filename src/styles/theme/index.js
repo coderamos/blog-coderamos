@@ -1,6 +1,12 @@
 export const colors = {
-  backgroundprimary: '#16202C',
-  white: '#FFFFFF',
+  black: '#000000',
+  blue: '#33A1F2',
+  white: '#FFF',
+  pink: '#F81CE5',
+  green: '#50E3C2',
+  greenBright: '#3AFACF',
+
+  gray: '#38444D',
 }
 
 export const grid = {
