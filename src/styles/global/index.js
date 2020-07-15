@@ -30,6 +30,7 @@ export default createGlobalStyle`
 
   body {
     background: ${props => props.theme.colors.black};
+    color: ${props => props.theme.colors.white};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
     line-height: 1;

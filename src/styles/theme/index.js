@@ -6,7 +6,7 @@ export const colors = {
   green: '#50E3C2',
   greenBright: '#3AFACF',
 
-  gray: '#38444D',
+  border: '#111111',
 }
 
 export const grid = {

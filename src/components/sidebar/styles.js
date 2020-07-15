@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const SideBarContainer = styled.aside`
   align-items: center;
   background: ${props => props.theme.colors.black};
-  border-right: 1px solid ${props => props.theme.colors.gray};
+  border-right: 1px solid ${props => props.theme.colors.border};
   display: flex;
   flex-direction: column;
   height: 100vh;
