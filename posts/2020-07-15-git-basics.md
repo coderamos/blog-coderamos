@@ -1,9 +1,9 @@
 ---
-postDate: 2020-07-15 23:56:01
-postTitle: O Básico sobre GIT
-postDescription: Aprenda a usar o GIT em 3 minutos
-postCategory: GIT
-postTagColor: '#112233'
+date: 2020-07-15 23:56:01
+title: O Básico sobre GIT
+description: Aprenda a usar o GIT em 3 minutos
+category: GIT
+tagColor: '#112233'
 ---
 
 # Lorem ipsum

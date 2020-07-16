@@ -9,16 +9,18 @@ import { useStaticQuery, graphql } from 'gatsby'
 const IndexPage = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query PostList {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
         edges {
           node {
-            id
+            fields {
+              postURL
+            }
             frontmatter {
-              postTagColor
-              postCategory
-              postDate(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-              postDescription
-              postTitle
+              tagColor
+              category
+              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+              description
+              title
             }
             timeToRead
           }
@@ -35,24 +37,19 @@ const IndexPage = () => {
       {postList.map(
         ({
           node: {
-            frontmatter: {
-              postTagColor,
-              postCategory,
-              postDate,
-              postDescription,
-              postTitle,
-            },
+            fields: { postURL },
+            frontmatter: { tagColor, category, date, description, title },
             timeToRead,
           },
         }) => (
           <PostItem
-            postURL="/about/"
-            postTagColor={postTagColor}
-            postCategory={postCategory}
-            postDate={postDate}
+            postURL={postURL}
+            tagColor={tagColor}
+            category={category}
+            date={date}
             timeToRead={timeToRead}
-            postTitle={postTitle}
-            postDescription={postDescription}
+            title={title}
+            description={description}
           />
         )
       )}

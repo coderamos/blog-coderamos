@@ -22,7 +22,7 @@ export const PostItemContainer = styled.section`
 export const PostItemTag = styled.div`
   align-items: center;
   background: ${props =>
-    props.postTagColor ? props.postTagColor : props.theme.colors.green};
+    props.tagColor ? props.tagColor : props.theme.colors.green};
   border-radius: 50%;
   color: ${props => props.theme.colors.white};
   display: flex;
