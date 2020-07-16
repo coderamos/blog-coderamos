@@ -6,8 +6,15 @@ module.exports = {
     author: `@coderamos`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/static/assets/images`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,7 +32,23 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [],
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images-v2',
+            options: {
+              name: 'uploads',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 960,
+              linkImagesToOriginal: false,
+            },
+          },
+          `gatsby-remark-lazy-load`,
+          `gatsby-remark-prismjs`,
+        ],
       },
     },
     `gatsby-transformer-sharp`,

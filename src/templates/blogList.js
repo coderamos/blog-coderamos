@@ -45,14 +45,18 @@ const BlogPost = props => {
     <Layout>
       <SEO title="Home" />
       {postList.map(
-        ({
-          node: {
-            fields: { postURL },
-            frontmatter: { tagColor, category, date, description, title },
-            timeToRead,
+        (
+          {
+            node: {
+              fields: { postURL },
+              frontmatter: { tagColor, category, date, description, title },
+              timeToRead,
+            },
           },
-        }) => (
+          index
+        ) => (
           <PostItem
+            key={index}
             postURL={postURL}
             tagColor={tagColor}
             category={category}

@@ -1,9 +1,9 @@
 import React from 'react'
+import * as s from '../components/post/styles'
 import { graphql } from 'gatsby'
-
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import * as s from '../components/post/styles'
+import RecommendedPosts from '../components/recommendedPosts'
 
 export const query = graphql`
   query Post($postURL: String!) {
@@ -21,8 +21,9 @@ export const query = graphql`
   }
 `
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
+  const { nextPost, previousPost } = pageContext
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
@@ -36,6 +37,7 @@ const BlogPost = ({ data }) => {
       <s.PostContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </s.PostContent>
+      <RecommendedPosts next={nextPost} previous={previousPost} />
     </Layout>
   )
 }

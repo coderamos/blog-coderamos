@@ -34,6 +34,19 @@ export default createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
     line-height: 1;
+
+    ::-webkit-scrollbar {
+      background-color: ${props => props.theme.colors.black};
+      width: 8px;
+    }
+  ::-webkit-scrollbar-track {
+      background-color: ${props => props.theme.colors.black};
+      border-radius: 4px;
+    }
+  ::-webkit-scrollbar-thumb {
+      background-color: ${props => props.theme.colors.green};
+      border-radius: 4px;
+    }
   }
 
   ol, ul {
