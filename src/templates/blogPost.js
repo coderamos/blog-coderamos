@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-// import { Container } from './styles';
 
 export const query = graphql`
   query Post($postURL: String!) {
@@ -13,7 +12,7 @@ export const query = graphql`
   }
 `
 
-const Templates = ({ data }) => {
+const BlogPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <>
@@ -23,4 +22,4 @@ const Templates = ({ data }) => {
   )
 }
 
-export default Templates
+export default BlogPost
