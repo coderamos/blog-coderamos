@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import PostItem from '../components/postItem'
+import Pagination from '../components/pagination'
 
 export const query = graphql`
   query PostList($limit: Int!, $skip: Int!) {
@@ -33,6 +34,13 @@ export const query = graphql`
 
 const BlogPost = props => {
   const postList = props.data.allMarkdownRemark.edges
+
+  const { currentPage, numPages } = props.pageContext
+  const isFirstPage = currentPage === 1
+  const isLastPage = currentPage === numPages
+  const prevPage = currentPage - 1 === 1 ? '/' : `/page/${currentPage - 1}`
+  const nextPage = `/page/${currentPage + 1}`
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -55,6 +63,14 @@ const BlogPost = props => {
           />
         )
       )}
+      <Pagination
+        isFirstPage={isFirstPage}
+        isLastPage={isLastPage}
+        currentPage={currentPage}
+        numPages={numPages}
+        prevPage={prevPage}
+        nextPage={nextPage}
+      />
     </Layout>
   )
 }
