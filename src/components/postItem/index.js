@@ -5,23 +5,25 @@ import * as s from './styles'
 
 const PostItem = ({
   postURL,
-  backgroundColor,
-  category,
-  date,
+  postTagColor,
+  postCategory,
+  postDate,
   timeToRead,
-  title,
-  description,
+  postTitle,
+  postDescription,
 }) => {
   return (
     <s.PostItemLink to={postURL}>
       <s.PostItemContainer>
-        <s.PostItemTag background={backgroundColor}>{category}</s.PostItemTag>
+        <s.PostItemTag postTagColor={postTagColor}>
+          {postCategory}
+        </s.PostItemTag>
         <s.PostItemInfo>
           <s.PostItemDate>
-            {date} &middot; {timeToRead}
+            {postDate} &middot; {timeToRead} min
           </s.PostItemDate>
-          <s.PostItemTitle>{title}</s.PostItemTitle>
-          <s.PostItemDescription>{description}</s.PostItemDescription>
+          <s.PostItemTitle>{postTitle}</s.PostItemTitle>
+          <s.PostItemDescription>{postDescription}</s.PostItemDescription>
         </s.PostItemInfo>
       </s.PostItemContainer>
     </s.PostItemLink>
@@ -30,12 +32,12 @@ const PostItem = ({
 
 PostItem.propTypes = {
   postURL: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
-  category: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
+  postTagColor: PropTypes.string,
+  postCategory: PropTypes.string.isRequired,
+  postDate: PropTypes.string.isRequired,
   timeToRead: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  postTitle: PropTypes.string.isRequired,
+  postDescription: PropTypes.string.isRequired,
 }
 
 export default PostItem

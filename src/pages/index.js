@@ -4,25 +4,60 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import PostItem from '../components/postItem'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <PostItem
-      postURL="/about/"
-      backgroundColor="green"
-      category="GIT"
-      date="July 18, 2020"
-      timeToRead="5"
-      title="O BÁSICO SOBRE O GIT"
-      description="aprenda a usar o git em 3 minutos"
-    />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-    <PostItem />
-  </Layout>
-)
+import { useStaticQuery, graphql } from 'gatsby'
+
+const IndexPage = () => {
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+    query PostList {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            frontmatter {
+              postTagColor
+              postCategory
+              postDate(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+              postDescription
+              postTitle
+            }
+            timeToRead
+          }
+        }
+      }
+    }
+  `)
+
+  const postList = allMarkdownRemark.edges
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      {postList.map(
+        ({
+          node: {
+            frontmatter: {
+              postTagColor,
+              postCategory,
+              postDate,
+              postDescription,
+              postTitle,
+            },
+            timeToRead,
+          },
+        }) => (
+          <PostItem
+            postURL="/about/"
+            postTagColor={postTagColor}
+            postCategory={postCategory}
+            postDate={postDate}
+            timeToRead={timeToRead}
+            postTitle={postTitle}
+            postDescription={postDescription}
+          />
+        )
+      )}
+    </Layout>
+  )
+}
 
 export default IndexPage
