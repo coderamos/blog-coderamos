@@ -30,14 +30,10 @@ The page will reload if you make edits. You will also see any lint errors in the
 
 ## Main Tecnologies Used
 
-#### [gatsby](https://www.npmjs.com/package/babel-plugin-root-import)
-
-> To use `import` and `require` with root based paths.
-> ![babel-plugin-root-import](./public/babel-plugin-root-import.png)
+<!-- #### [gatsby]()
 
 #### [styled-components](https://styled-components.com/)
-
-> To stylize my app as components.
+ -->
 
 ## About Me
 
