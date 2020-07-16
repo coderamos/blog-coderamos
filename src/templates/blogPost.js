@@ -4,10 +4,14 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import RecommendedPosts from '../components/recommendedPosts'
+import Comments from '../components/comments'
 
 export const query = graphql`
   query Post($postURL: String!) {
     markdownRemark(fields: { postURL: { eq: $postURL } }) {
+      fields {
+        postURL
+      }
       frontmatter {
         title
         description
@@ -38,6 +42,7 @@ const BlogPost = ({ data, pageContext }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </s.PostContent>
       <RecommendedPosts next={nextPost} previous={previousPost} />
+      <Comments postURL={post.fields.postURL} title={post.frontmatter.title} />
     </Layout>
   )
 }
