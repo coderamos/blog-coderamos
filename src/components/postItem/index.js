@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import * as s from './styles'
+import getThemeColor from '../../utils/getThemeColor'
 
 const PostItem = ({
   postURL,
@@ -15,8 +16,8 @@ const PostItem = ({
     <s.PostItemLink
       to={postURL}
       cover
-      direction="down"
-      bg="#112233"
+      bg={getThemeColor()}
+      direction="up"
       duration={0.6}
     >
       <s.PostItemContainer>

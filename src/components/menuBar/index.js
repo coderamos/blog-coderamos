@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import * as s from './styles'
+import getThemeColor from '../../utils/getThemeColor'
 
 const MenuBar = () => {
   const [theme, setTheme] = useState('dark')
@@ -21,8 +22,8 @@ const MenuBar = () => {
           to="/"
           title="home"
           cover
+          bg={getThemeColor()}
           direction="left"
-          bg="#112233"
           duration={0.6}
         >
           <s.MenuBarItem>
@@ -33,8 +34,8 @@ const MenuBar = () => {
           to="/search/"
           title="search"
           cover
+          bg={getThemeColor()}
           direction="down"
-          bg="#112233"
           duration={0.6}
         >
           <s.MenuBarItem>

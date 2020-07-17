@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import * as s from './styles'
+import getThemeColor from '../../utils/getThemeColor'
 
 const Pagination = ({
   isFirstPage,
@@ -16,8 +17,8 @@ const Pagination = ({
         <s.PaginationLink
           to={prevPage}
           cover
+          bg={getThemeColor()}
           direction="left"
-          bg="#112233"
           duration={0.6}
         >
           prev
@@ -30,8 +31,8 @@ const Pagination = ({
         <s.PaginationLink
           to={nextPage}
           cover
+          bg={getThemeColor()}
           direction="right"
-          bg="#112233"
           duration={0.6}
         >
           next
