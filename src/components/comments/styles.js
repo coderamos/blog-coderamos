@@ -11,13 +11,13 @@ export const CommentsContainer = styled.section`
 
   #disqus_thread {
     a {
-      color: ${props => props.theme.colors.blue} !important;
+      color: ${props => props.theme.colors.dark.secondary} !important;
     }
   }
 `
 
 export const CommentsTitle = styled.h2`
-  color: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.dark.white};
   font-size: 2.1rem;
   font-weight: 700;
   padding-bottom: 2rem;

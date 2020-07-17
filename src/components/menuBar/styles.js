@@ -8,18 +8,18 @@ import { Grid } from '@styled-icons/feather/Grid'
 import { ArrowUp } from '@styled-icons/feather/ArrowUp'
 
 const iconStyle = css`
-  color: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.dark.white};
   transition: color 0.4s;
 
   &:hover {
-    color: ${props => props.theme.colors.greenBright};
+    color: ${props => props.theme.colors.dark.secondary};
   }
 `
 
 export const MenuBarContainer = styled.aside`
   align-items: center;
-  background: ${props => props.theme.colors.black};
-  border-left: 1px solid ${props => props.theme.colors.border};
+  background: ${props => props.theme.colors.dark.primary};
+  border-left: 1px solid ${props => props.theme.colors.dark.border};
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -40,7 +40,7 @@ export const MenuBarLink = styled(Link)`
 `
 
 export const MenuBarItem = styled.li`
-  color: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.dark.white};
   cursor: pointer;
   display: block;
   height: 30px;

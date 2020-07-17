@@ -1,12 +1,20 @@
 export const colors = {
-  black: '#000000',
-  blue: '#33A1F2',
-  white: '#FFF',
-  pink: '#F81CE5',
-  green: '#50E3C2',
-  greenBright: '#3AFACF',
-
-  border: '#111111',
+  dark: {
+    primary: '#000000',
+    secondary: '#33A1F2',
+    border: '#111111',
+    link: '#F81CE5',
+    post: '#FFFFFF',
+    white: '#FFFFFF',
+  },
+  light: {
+    primary: '#000000',
+    secondary: '#33A1F2',
+    border: '#111111',
+    link: '#F81CE5',
+    post: '#FFFFFF',
+    white: '#FFFFFF',
+  },
 }
 
 export const grid = {

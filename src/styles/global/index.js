@@ -29,22 +29,22 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.black};
-    color: ${props => props.theme.colors.white};
+    background: ${props => props.theme.colors.dark.primary};
+    color: ${props => props.theme.colors.dark.white};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
     line-height: 1;
 
     ::-webkit-scrollbar {
-      background-color: ${props => props.theme.colors.black};
+      background-color: ${props => props.theme.colors.dark.primary};
       width: 8px;
     }
   ::-webkit-scrollbar-track {
-      background-color: ${props => props.theme.colors.black};
+      background-color: ${props => props.theme.colors.dark.primary};
       border-radius: 4px;
     }
   ::-webkit-scrollbar-thumb {
-      background-color: ${props => props.theme.colors.green};
+      background-color: ${props => props.theme.colors.dark.secondary};
       border-radius: 4px;
     }
   }
