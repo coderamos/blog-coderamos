@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SearchContainer = styled.section`
-  background: ${props => props.theme.colors.dark.primary};
+  background: var(--primary);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -24,21 +24,22 @@ export const SearchContainer = styled.section`
   }
 
   .ais-Stats {
-    color: ${props => props.theme.colors.dark.secondary};
+    color: var(--secondary);
   }
 
   .ais-SearchBox-input {
     background: none;
     border: none;
-    border-bottom: 1px solid ${props => props.theme.colors.dark.secondary};
-    color: ${props => props.theme.colors.dark.secondary};
+    border-bottom: 1px solid var(--secondary);
+    color: var(--secondary);
     display: flex;
     font-size: 1.6rem;
+    outline: 0;
     padding: 0.5rem;
     width: 100%;
 
     &::placeholder {
-      color: ${props => props.theme.colors.dark.text};
+      color: var(--text);
     }
   }
 

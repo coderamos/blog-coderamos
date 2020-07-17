@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const RecommendedPostsContainer = styled.section`
-  background: ${props => props.theme.colors.dark.primary};
-  border-bottom: 1px solid ${props => props.theme.colors.dark.border};
-  border-top: 1px solid ${props => props.theme.colors.dark.border};
+  background: var(--primary);
+  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
   bottom: 0;
   display: flex;
   left: 24rem;
@@ -15,8 +15,8 @@ export const RecommendedPostsContainer = styled.section`
 
 export const RecommendedPostLink = styled(Link)`
   align-items: center;
-  background: ${props => props.theme.colors.dark.primary};
-  color: ${props => props.theme.colors.dark.secondary};
+  background: var(--primary);
+  color: var(--secondary);
   display: flex;
   padding: 2rem;
   text-decoration: none;
@@ -24,11 +24,11 @@ export const RecommendedPostLink = styled(Link)`
   width: 50%;
 
   &:hover {
-    color: ${props => props.theme.colors.dark.secondary};
+    color: var(--secondary);
   }
 
   &.previous {
-    border-right: 1px solid ${props => props.theme.colors.dark.border};
+    border-right: 1px solid var(--border);
   }
 
   &.next {

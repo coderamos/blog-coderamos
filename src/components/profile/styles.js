@@ -2,18 +2,18 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const ProfileContainer = styled.section`
-  color: ${props => props.theme.colors.dark.text};
+  color: var(--text);
   display: flex;
   flex-direction: column;
 `
 
 export const ProfileLink = styled(Link)`
-  color: ${props => props.theme.colors.dark.text};
+  color: var(--text);
   text-decoration: none;
   transition: color 0.4s;
 
   &:hover {
-    color: ${props => props.theme.colors.dark.secondary};
+    color: var(--secondary);
   }
 `
 

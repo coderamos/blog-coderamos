@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const PostHeader = styled.header`
-  color: ${props => props.theme.colors.dark.text};
+  color: var(--text);
   margin: auto;
   max-width: 70rem;
   padding: 5rem 5rem 0;
@@ -41,7 +41,7 @@ export const PostContent = styled.section`
   .tags,
   iframe,
   .button-post {
-    color: ${props => props.theme.colors.dark.text};
+    color: var(--text);
     font-size: 1.25rem;
     font-weight: 300;
     letter-spacing: 0.069rem;
@@ -94,14 +94,14 @@ export const PostContent = styled.section`
   }
 
   blockquote {
-    border-left: 0.3rem solid ${props => props.theme.colors.dark.secondary};
-    color: ${props => props.theme.colors.dark.text};
+    border-left: 0.3rem solid var(--secondary);
+    color: var(--text);
     margin: 3.125rem auto;
     padding: 0 1.875rem;
   }
 
   hr {
-    border: 1px solid ${props => props.theme.colors.dark.secondary};
+    border: 1px solid var(--secondary);
     margin: 3rem auto;
   }
 
@@ -173,13 +173,13 @@ export const PostContent = styled.section`
   }
 
   a {
-    border-bottom: 1px dashed ${props => props.theme.colors.dark.secondary};
-    color: ${props => props.theme.colors.dark.secondary};
+    border-bottom: 1px dashed var(--secondary);
+    color: var(--secondary);
     text-decoration: none;
     transition: opacity 0.5s;
 
     svg {
-      color: ${props => props.theme.colors.dark.text};
+      color: var(--text);
     }
 
     &:hover {

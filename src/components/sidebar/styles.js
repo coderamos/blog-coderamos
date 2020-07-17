@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const SideBarContainer = styled.aside`
   align-items: center;
-  background: ${props => props.theme.colors.dark.primary};
-  border-right: 1px solid ${props => props.theme.colors.dark.border};
+  background: var(--primary);
+  border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   height: 100vh;

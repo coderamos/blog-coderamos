@@ -22,29 +22,26 @@ export default createGlobalStyle`
     vertical-align: baseline;
   }
 
-/* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
 
   body {
-    background: ${props => props.theme.colors.dark.primary};
-    color: ${props => props.theme.colors.dark.text};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
     line-height: 1;
 
     ::-webkit-scrollbar {
-      background-color: ${props => props.theme.colors.dark.primary};
+      background-color: var(--primary);
       width: 8px;
     }
   ::-webkit-scrollbar-track {
-      background-color: ${props => props.theme.colors.dark.primary};
+      background-color: var(--primary);
       border-radius: 4px;
     }
   ::-webkit-scrollbar-thumb {
-      background-color: ${props => props.theme.colors.dark.secondary};
+      background-color: var(--secondary);
       border-radius: 4px;
     }
   }
@@ -66,5 +63,21 @@ export default createGlobalStyle`
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+
+  body.dark {
+    --primary: #000000;
+    --secondary: #33A1F2;
+    --border: #111111;
+    --link: #F81CE5;
+    --text: #FFFFFF;
+  }
+
+  body.light {
+    --primary: #FFFFFF;
+    --secondary: #33A1F2;
+    --border: #CCCCCC;
+    --link: #F81CE5;
+    --text: #222222;
   }
 `

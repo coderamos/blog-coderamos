@@ -9,12 +9,12 @@ import { GlobalStyle, theme } from '../../styles'
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <s.LayoutContainer>
         <Sidebar />
         <s.LayoutContent>{children}</s.LayoutContent>
         <MenuBar />
       </s.LayoutContainer>
-      <GlobalStyle />
     </ThemeProvider>
   )
 }

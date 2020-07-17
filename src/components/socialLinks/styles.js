@@ -15,12 +15,12 @@ export const SocialLinksList = styled.ul`
 export const SocialLinksItem = styled.li``
 
 export const SocialLinksLink = styled.a`
-  color: ${props => props.theme.colors.dark.text};
+  color: var(--text);
   text-decoration: none;
   transition: color 0.4s;
 
   &:hover {
-    color: ${props => props.theme.colors.dark.secondary};
+    color: var(--secondary);
   }
 `
 

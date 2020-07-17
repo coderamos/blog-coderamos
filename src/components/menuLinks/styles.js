@@ -11,16 +11,16 @@ export const MenuLinksItem = styled.li`
   padding: 0.5rem 0;
 
   .active {
-    color: ${props => props.theme.colors.dark.secondary};
+    color: var(--secondary);
   }
 `
 
 export const MenuLinksLink = styled(Link)`
-  color: ${props => props.theme.colors.dark.text};
+  color: var(--text);
   text-decoration: none;
   transition: color 0.4s;
 
   &:hover {
-    color: ${props => props.theme.colors.dark.secondary};
+    color: var(--secondary);
   }
 `
