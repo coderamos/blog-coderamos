@@ -4,16 +4,14 @@ export const colors = {
     secondary: '#33A1F2',
     border: '#111111',
     link: '#F81CE5',
-    post: '#FFFFFF',
-    white: '#FFFFFF',
+    text: '#FFFFFF',
   },
   light: {
-    primary: '#000000',
+    primary: '#FFFFFF',
     secondary: '#33A1F2',
-    border: '#111111',
+    border: '#CCCCCC',
     link: '#F81CE5',
-    post: '#FFFFFF',
-    white: '#FFFFFF',
+    text: '#222222',
   },
 }
 

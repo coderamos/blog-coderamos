@@ -15,7 +15,7 @@ export const SocialLinksList = styled.ul`
 export const SocialLinksItem = styled.li``
 
 export const SocialLinksLink = styled.a`
-  color: ${props => props.theme.colors.dark.white};
+  color: ${props => props.theme.colors.dark.text};
   text-decoration: none;
   transition: color 0.4s;
 

@@ -16,7 +16,7 @@ export const MenuLinksItem = styled.li`
 `
 
 export const MenuLinksLink = styled(Link)`
-  color: ${props => props.theme.colors.dark.white};
+  color: ${props => props.theme.colors.dark.text};
   text-decoration: none;
   transition: color 0.4s;
 

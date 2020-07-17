@@ -17,7 +17,7 @@ export const CommentsContainer = styled.section`
 `
 
 export const CommentsTitle = styled.h2`
-  color: ${props => props.theme.colors.dark.white};
+  color: ${props => props.theme.colors.dark.text};
   font-size: 2.1rem;
   font-weight: 700;
   padding-bottom: 2rem;

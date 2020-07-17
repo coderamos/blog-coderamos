@@ -38,7 +38,7 @@ export const SearchContainer = styled.section`
     width: 100%;
 
     &::placeholder {
-      color: ${props => props.theme.colors.dark.white};
+      color: ${props => props.theme.colors.dark.text};
     }
   }
 

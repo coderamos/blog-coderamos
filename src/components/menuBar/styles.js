@@ -8,7 +8,7 @@ import { Grid } from '@styled-icons/feather/Grid'
 import { ArrowUp } from '@styled-icons/feather/ArrowUp'
 
 const iconStyle = css`
-  color: ${props => props.theme.colors.dark.white};
+  color: ${props => props.theme.colors.dark.text};
   transition: color 0.4s;
 
   &:hover {
@@ -40,7 +40,7 @@ export const MenuBarLink = styled(Link)`
 `
 
 export const MenuBarItem = styled.li`
-  color: ${props => props.theme.colors.dark.white};
+  color: ${props => props.theme.colors.dark.text};
   cursor: pointer;
   display: block;
   height: 30px;

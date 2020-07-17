@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const PostHeader = styled.header`
-  color: ${props => props.theme.colors.dark.white};
+  color: ${props => props.theme.colors.dark.text};
   margin: auto;
   max-width: 70rem;
   padding: 5rem 5rem 0;
@@ -41,7 +41,7 @@ export const PostContent = styled.section`
   .tags,
   iframe,
   .button-post {
-    color: ${props => props.theme.colors.dark.post};
+    color: ${props => props.theme.colors.dark.text};
     font-size: 1.25rem;
     font-weight: 300;
     letter-spacing: 0.069rem;
@@ -95,7 +95,7 @@ export const PostContent = styled.section`
 
   blockquote {
     border-left: 0.3rem solid ${props => props.theme.colors.dark.secondary};
-    color: ${props => props.theme.colors.dark.post};
+    color: ${props => props.theme.colors.dark.text};
     margin: 3.125rem auto;
     padding: 0 1.875rem;
   }
@@ -179,7 +179,7 @@ export const PostContent = styled.section`
     transition: opacity 0.5s;
 
     svg {
-      color: ${props => props.theme.colors.dark.post};
+      color: ${props => props.theme.colors.dark.text};
     }
 
     &:hover {
