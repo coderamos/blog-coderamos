@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 export const LayoutContainer = styled.section`
   display: flex;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    flex-direction: column;
+  }
 `
 
 export const LayoutContent = styled.main`
@@ -13,5 +17,9 @@ export const LayoutContent = styled.main`
 
   body#grid & {
     grid-template-areas: 'POSTS' 'PAGINATION';
+  }
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    padding: 4.125rem 0 3rem 0;
   }
 `

@@ -21,10 +21,18 @@ export const SearchContainer = styled.section`
 
   .ais-SearchBox {
     padding-top: 2rem;
+
+    @media ${props => props.theme.mediaQueries.lg} {
+      padding: 1rem;
+    }
   }
 
   .ais-Stats {
     color: var(--secondary);
+
+    @media ${props => props.theme.mediaQueries.lg} {
+      padding: 0.5rem 1rem;
+    }
   }
 
   .ais-SearchBox-input {

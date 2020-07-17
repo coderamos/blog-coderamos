@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-export const MenuLinksContainer = styled.nav``
+
+export const MenuLinksContainer = styled.nav`
+  @media ${props => props.theme.mediaQueries.lg} {
+    display: none;
+  }
+`
 
 export const MenuLinksList = styled.ul`
   font-size: 1.2rem;

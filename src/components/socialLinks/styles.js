@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const SocialLinksContainer = styled.nav`
   margin: 2rem auto;
   width: 100%;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    display: none;
+  }
 `
 
 export const SocialLinksList = styled.ul`

@@ -3,16 +3,19 @@ import PropTypes from 'prop-types'
 import * as s from './styles'
 import Sidebar from '../sidebar'
 import MenuBar from '../menuBar'
-import { GlobalStyle } from '../../styles'
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyle, theme } from '../../styles'
 
 const Layout = ({ children }) => {
   return (
-    <s.LayoutContainer>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Sidebar />
-      <s.LayoutContent>{children}</s.LayoutContent>
-      <MenuBar />
-    </s.LayoutContainer>
+      <s.LayoutContainer>
+        <Sidebar />
+        <s.LayoutContent>{children}</s.LayoutContent>
+        <MenuBar />
+      </s.LayoutContainer>
+    </ThemeProvider>
   )
 }
 

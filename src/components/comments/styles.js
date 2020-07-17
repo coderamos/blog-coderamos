@@ -14,6 +14,11 @@ export const CommentsContainer = styled.section`
       color: var(--secondary) !important;
     }
   }
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    padding: 3rem 1.4rem 0;
+    max-width: 100%;
+  }
 `
 
 export const CommentsTitle = styled.h2`
@@ -21,4 +26,8 @@ export const CommentsTitle = styled.h2`
   font-size: 2.1rem;
   font-weight: 700;
   padding-bottom: 2rem;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    font-size: 1.375rem;
+  }
 `

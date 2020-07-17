@@ -5,6 +5,11 @@ export const PostHeader = styled.header`
   margin: auto;
   max-width: 70rem;
   padding: 5rem 5rem 0;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    padding: 3rem 0 0;
+    max-width: 100%;
+  }
 `
 
 export const PostTitle = styled.h1`
@@ -12,18 +17,34 @@ export const PostTitle = styled.h1`
   font-weight: 700;
   margin: 1rem auto;
   padding: 0 1.4rem;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    padding: 0 1rem;
+  }
 `
 
 export const PostDescription = styled.h2`
   font-size: 2rem;
   font-weight: 200;
   padding: 0 1.4rem;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    padding: 0 1rem;
+  }
 `
 
 export const PostDate = styled.p`
   font-size: 1.1rem;
   font-weight: 100;
   padding: 0 1.4rem;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    padding: 0 1rem;
+  }
 `
 
 export const PostContent = styled.section`
@@ -47,6 +68,11 @@ export const PostContent = styled.section`
     letter-spacing: 0.069rem;
     line-height: 1.7;
     padding: 0 1.4rem;
+
+    @media ${props => props.theme.mediaQueries.lg} {
+      padding: 0 1rem;
+      word-break: break-word;
+    }
   }
 
   p {
@@ -91,6 +117,10 @@ export const PostContent = styled.section`
   iframe {
     padding: 0 1.6rem 1.6rem;
     width: 100%;
+
+    @media ${props => props.theme.mediaQueries.lg} {
+      padding: 0 1rem;
+    }
   }
 
   blockquote {
@@ -123,14 +153,26 @@ export const PostContent = styled.section`
 
   h1 {
     font-size: 2.8rem;
+
+    @media ${props => props.theme.mediaQueries.lg} {
+      font-size: 1.875rem;
+    }
   }
 
   h2 {
     font-size: 2.1rem;
+
+    @media ${props => props.theme.mediaQueries.lg} {
+      font-size: 1.375rem;
+    }
   }
 
   h3 {
     font-size: 1.6rem;
+
+    @media ${props => props.theme.mediaQueries.lg} {
+      font-size: 1.125rem;
+    }
   }
 
   h4 {
@@ -166,6 +208,10 @@ export const PostContent = styled.section`
 
   .gatsby-highlight {
     padding: 0 1.6rem 1.6rem;
+
+    @media ${props => props.theme.mediaQueries.lg} {
+      padding: 0;
+    }
   }
 
   .instagram-media {
@@ -185,5 +231,10 @@ export const PostContent = styled.section`
     &:hover {
       opacity: 0.8;
     }
+  }
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    padding: 2rem 0;
+    max-width: 100%;
   }
 `

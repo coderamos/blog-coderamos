@@ -1,3 +1,4 @@
 import GlobalStyle from './global'
+import theme from './theme'
 
-export { GlobalStyle }
+export { GlobalStyle, theme }

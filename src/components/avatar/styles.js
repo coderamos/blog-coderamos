@@ -6,4 +6,9 @@ export const AvatarContainer = styled(Img)`
   height: 3.75rem;
   margin: auto;
   width: 3.75rem;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
 `

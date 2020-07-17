@@ -43,6 +43,7 @@ const MenuBar = () => {
           onClick={() => {
             window.__setPreferredDisplay(toggledDisplay)
           }}
+          className="display"
         >
           {display === 'list' ? <s.GridIcon /> : <s.ListIcon />}
         </s.MenuBarItem>

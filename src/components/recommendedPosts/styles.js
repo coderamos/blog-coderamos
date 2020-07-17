@@ -8,9 +8,6 @@ export const RecommendedPostsContainer = styled.section`
   bottom: 0;
   display: flex;
   left: 24rem;
-  position: fixed;
-  width: calc(100% - 27.75rem);
-  z-index: 3;
 `
 
 export const RecommendedPostLink = styled(Link)`
@@ -43,5 +40,11 @@ export const RecommendedPostLink = styled(Link)`
   &.next:after {
     content: '\\2192';
     margin-left: 0.5rem;
+  }
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    padding: 2rem 1rem;
+    line-height: 1.3;
+    font-size: 0.9rem;
   }
 `

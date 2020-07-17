@@ -30,11 +30,25 @@ export const MenuBarContainer = styled.aside`
   position: fixed;
   right: 0;
   width: 3.75rem;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    border-top: 1px solid var(--border);
+    bottom: 0;
+    flex-direction: row;
+    height: auto;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+  }
 `
 
 export const MenuBarWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    flex-direction: row;
+  }
 `
 
 export const MenuBarLink = styled(Link)`
@@ -49,6 +63,16 @@ export const MenuBarItem = styled.li`
   padding: 1.1rem;
   position: relative;
   width: 30px;
+
+  &.display {
+    @media ${props => props.theme.mediaQueries.lg} {
+      display: none;
+    }
+  }
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    padding: 0.9rem;
+  }
 `
 
 export const HomeIcon = styled(Home)`

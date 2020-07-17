@@ -12,4 +12,11 @@ export const SideBarContainer = styled.aside`
   text-align: center;
   transition: background 0.4s;
   width: 20rem;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
 `
