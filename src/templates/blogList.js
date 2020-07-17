@@ -6,6 +6,8 @@ import SEO from '../components/seo'
 import PostItem from '../components/postItem'
 import Pagination from '../components/pagination'
 
+import * as s from '../components/list/styles'
+
 export const query = graphql`
   query PostList($limit: Int!, $skip: Int!) {
     allMarkdownRemark(
@@ -44,29 +46,32 @@ const BlogPost = props => {
   return (
     <Layout>
       <SEO title="Home" />
-      {postList.map(
-        (
-          {
-            node: {
-              fields: { postURL },
-              frontmatter: { tagColor, category, date, description, title },
-              timeToRead,
+      <s.ListContainer>
+        {postList.map(
+          (
+            {
+              node: {
+                fields: { postURL },
+                frontmatter: { tagColor, category, date, description, title },
+                timeToRead,
+              },
             },
-          },
-          index
-        ) => (
-          <PostItem
-            key={index}
-            postURL={postURL}
-            tagColor={tagColor}
-            category={category}
-            date={date}
-            timeToRead={timeToRead}
-            title={title}
-            description={description}
-          />
-        )
-      )}
+            index
+          ) => (
+            <PostItem
+              key={index}
+              postURL={postURL}
+              tagColor={tagColor}
+              category={category}
+              date={date}
+              timeToRead={timeToRead}
+              title={title}
+              description={description}
+            />
+          )
+        )}
+      </s.ListContainer>
+
       <Pagination
         isFirstPage={isFirstPage}
         isLastPage={isLastPage}

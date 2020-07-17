@@ -3,8 +3,10 @@ import { Link } from 'gatsby'
 
 import { Home } from '@styled-icons/feather/Home'
 import { Search } from '@styled-icons/feather/Search'
+import { Sun } from '@styled-icons/feather/Sun'
 import { Moon } from '@styled-icons/feather/Moon'
 import { Grid } from '@styled-icons/feather/Grid'
+import { List } from '@styled-icons/feather/List'
 import { ArrowUp } from '@styled-icons/feather/ArrowUp'
 
 const iconStyle = css`
@@ -57,11 +59,19 @@ export const SearchIcon = styled(Search)`
   ${iconStyle}
 `
 
+export const SunIcon = styled(Sun)`
+  ${iconStyle}
+`
+
 export const MoonIcon = styled(Moon)`
   ${iconStyle}
 `
 
 export const GridIcon = styled(Grid)`
+  ${iconStyle}
+`
+
+export const ListIcon = styled(List)`
   ${iconStyle}
 `
 

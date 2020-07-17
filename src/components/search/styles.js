@@ -47,4 +47,17 @@ export const SearchContainer = styled.section`
   .ais-SearchBox-reset {
     display: none;
   }
+
+  body#grid & {
+    .ais-Hits-list {
+      background-color: var(--secondary);
+      border-bottom: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+      display: grid;
+      grid-area: POSTS;
+      grid-gap: 1px;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      margin-top: 2rem;
+    }
+  }
 `
