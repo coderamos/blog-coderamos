@@ -11,7 +11,7 @@ import { ArrowUp } from '@styled-icons/feather/ArrowUp'
 
 const iconStyle = css`
   color: var(--text);
-  transition: color 0.4s;
+  transition: color 0.4s, background 0.4s;
 
   &:hover {
     color: var(--secondary);

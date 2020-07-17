@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import * as s from './styles'
 
 const PostItem = ({

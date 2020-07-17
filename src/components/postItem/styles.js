@@ -5,6 +5,7 @@ export const PostItemLink = styled(Link)`
   color: var(--text);
   display: flex;
   text-decoration: none;
+  transition: background 0.2s;
 
   &:hover {
     color: var(--secondary);
@@ -12,6 +13,7 @@ export const PostItemLink = styled(Link)`
 
   body#grid & {
     background-color: var(--primary);
+    min-height: 100%;
   }
 `
 

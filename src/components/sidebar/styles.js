@@ -10,5 +10,6 @@ export const SideBarContainer = styled.aside`
   padding: 2rem;
   position: fixed;
   text-align: center;
+  transition: background 0.4s;
   width: 20rem;
 `
