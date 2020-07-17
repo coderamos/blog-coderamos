@@ -12,11 +12,31 @@ const Pagination = ({
 }) => {
   return (
     <s.PaginationContainer>
-      {!isFirstPage && <s.PaginationLink to={prevPage}>prev</s.PaginationLink>}
+      {!isFirstPage && (
+        <s.PaginationLink
+          to={prevPage}
+          cover
+          direction="left"
+          bg="#112233"
+          duration={0.6}
+        >
+          prev
+        </s.PaginationLink>
+      )}
       <s.PaginationText>
         {currentPage} | {numPages}
       </s.PaginationText>
-      {!isLastPage && <s.PaginationLink to={nextPage}>next</s.PaginationLink>}
+      {!isLastPage && (
+        <s.PaginationLink
+          to={nextPage}
+          cover
+          direction="right"
+          bg="#112233"
+          duration={0.6}
+        >
+          next
+        </s.PaginationLink>
+      )}
     </s.PaginationContainer>
   )
 }

@@ -12,7 +12,13 @@ const PostItem = ({
   description,
 }) => {
   return (
-    <s.PostItemLink to={postURL}>
+    <s.PostItemLink
+      to={postURL}
+      cover
+      direction="down"
+      bg="#112233"
+      duration={0.6}
+    >
       <s.PostItemContainer>
         <s.PostItemTag tagColor={tagColor}>{category}</s.PostItemTag>
         <s.PostItemInfo>

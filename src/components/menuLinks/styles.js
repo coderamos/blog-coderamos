@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const MenuLinksContainer = styled.nav`
   @media ${props => props.theme.mediaQueries.lg} {
@@ -20,7 +20,7 @@ export const MenuLinksItem = styled.li`
   }
 `
 
-export const MenuLinksLink = styled(Link)`
+export const MenuLinksLink = styled(AniLink)`
   color: var(--text);
   text-decoration: none;
   transition: color 0.4s;

@@ -9,12 +9,23 @@ const RecommendedPosts = ({ next, previous }) => {
         <s.RecommendedPostLink
           to={previous.fields.postURL}
           className="previous"
+          cover
+          direction="left"
+          bg="#112233"
+          duration={0.6}
         >
           {previous.frontmatter.title}
         </s.RecommendedPostLink>
       )}
       {next && (
-        <s.RecommendedPostLink to={next.fields.postURL} className="next">
+        <s.RecommendedPostLink
+          to={next.fields.postURL}
+          className="next"
+          cover
+          direction="right"
+          bg="#112233"
+          duration={0.6}
+        >
           {next.frontmatter.title}
         </s.RecommendedPostLink>
       )}

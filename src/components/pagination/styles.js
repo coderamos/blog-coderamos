@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const PaginationContainer = styled.section`
   align-items: center;
@@ -14,7 +14,7 @@ export const PaginationContainer = styled.section`
   }
 `
 
-export const PaginationLink = styled(Link)`
+export const PaginationLink = styled(AniLink)`
   color: var(--text);
   text-decoration: none;
   transition: color 0.4s;

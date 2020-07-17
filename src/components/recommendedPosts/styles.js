@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const RecommendedPostsContainer = styled.section`
   background: var(--primary);
@@ -10,7 +10,7 @@ export const RecommendedPostsContainer = styled.section`
   left: 24rem;
 `
 
-export const RecommendedPostLink = styled(Link)`
+export const RecommendedPostLink = styled(AniLink)`
   align-items: center;
   background: var(--primary);
   color: var(--secondary);

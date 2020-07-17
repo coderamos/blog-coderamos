@@ -17,12 +17,26 @@ const MenuBar = () => {
   return (
     <s.MenuBarContainer>
       <s.MenuBarWrapper>
-        <s.MenuBarLink to="/" title="home">
+        <s.MenuBarLink
+          to="/"
+          title="home"
+          cover
+          direction="left"
+          bg="#112233"
+          duration={0.6}
+        >
           <s.MenuBarItem>
             <s.HomeIcon />
           </s.MenuBarItem>
         </s.MenuBarLink>
-        <s.MenuBarLink to="/search/" title="search">
+        <s.MenuBarLink
+          to="/search/"
+          title="search"
+          cover
+          direction="down"
+          bg="#112233"
+          duration={0.6}
+        >
           <s.MenuBarItem>
             <s.SearchIcon />
           </s.MenuBarItem>

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import { Home } from '@styled-icons/feather/Home'
 import { Search } from '@styled-icons/feather/Search'
@@ -51,7 +51,7 @@ export const MenuBarWrapper = styled.div`
   }
 `
 
-export const MenuBarLink = styled(Link)`
+export const MenuBarLink = styled(AniLink)`
   display: block;
 `
 

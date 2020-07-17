@@ -8,7 +8,14 @@ const MenuLinks = () => {
       <s.MenuLinksList>
         {links.map((link, index) => (
           <s.MenuLinksItem key={index}>
-            <s.MenuLinksLink to={link.url} activeClassName="active">
+            <s.MenuLinksLink
+              to={link.url}
+              activeClassName="active"
+              cover
+              direction="left"
+              bg="#112233"
+              duration={0.6}
+            >
               {link.label}
             </s.MenuLinksLink>
           </s.MenuLinksItem>
