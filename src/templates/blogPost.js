@@ -18,6 +18,7 @@ export const query = graphql`
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
         category
         tagColor
+        image
       }
       html
       timeToRead
@@ -30,7 +31,11 @@ const BlogPost = ({ data, pageContext }) => {
   const { nextPost, previousPost } = pageContext
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        image={post.frontmatter.image}
+      />
       <s.PostHeader>
         <s.PostDate>
           {post.frontmatter.date} &middot; Leitura de {post.timeToRead} min

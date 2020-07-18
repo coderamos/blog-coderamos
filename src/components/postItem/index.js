@@ -39,7 +39,7 @@ PostItem.propTypes = {
   tagColor: PropTypes.string,
   category: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.number.isRequired,
+  timeToRead: PropTypes.number,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 }

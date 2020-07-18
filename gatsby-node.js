@@ -1,7 +1,6 @@
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require('path')
 
-// add postURL to each post
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === 'MarkdownRemark') {
@@ -19,7 +18,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-// create page to each post
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
@@ -36,6 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
               date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
               description
               title
+              image
             }
             timeToRead
           }
