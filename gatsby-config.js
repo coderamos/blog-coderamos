@@ -7,7 +7,7 @@ module.exports = {
     position: `fron end developer`,
     description: `a blog about development, UX and UI`,
     author: `@coderamos`,
-    siteUrl: `https://coderamos.com.br`,
+    siteUrl: `https://coderamos.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
