@@ -39,7 +39,7 @@ collections:
           options:
             [
               { label: 'css', value: '#3596D0' },
-              { label: 'curriculo e emprego', value: '#00109B' },
+              { label: 'currículo e emprego', value: '#00109B' },
               { label: 'git e github', value: '#171515' },
               { label: 'html', value: '#DD4D25' },
               { label: 'js', value: '#F7DF1E' },
