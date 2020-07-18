@@ -17,17 +17,18 @@ export const PostItemLink = styled(AniLink)`
 `
 
 export const PostItemContainer = styled.section`
-  align-items: center;
+  align-items: flex-start;
   border-bottom: 1px solid var(--secondary);
   display: flex;
-  padding: 2rem 3rem;
+  flex-direction: column;
+  padding: 2rem 1rem;
   width: 100%;
 
   body#grid & {
     border: none;
-    padding: 2rem 1rem;
     flex-direction: column;
     justify-content: center;
+    padding: 2rem 1rem;
   }
 
   @media ${props => props.theme.mediaQueries.lg} {
@@ -41,14 +42,15 @@ export const PostItemTag = styled.div`
   align-items: center;
   background: ${props =>
     props.tagColor ? props.tagColor : 'var(--secondary)'};
-  border-radius: 50%;
   color: var(--text);
   display: flex;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
   justify-content: center;
-  min-height: 90px;
-  min-width: 90px;
+  margin-bottom: 0.7rem;
+  min-height: auto;
+  min-width: auto;
+  padding: 0.2rem 0.5rem;
   text-transform: uppercase;
 
   body#grid & {
@@ -58,17 +60,16 @@ export const PostItemTag = styled.div`
   @media ${props => props.theme.mediaQueries.lg} {
     border-radius: 0;
     font-size: 1rem;
+    margin-bottom: 0.7rem;
     min-height: auto;
     min-width: auto;
     padding: 0.2rem 0.5rem;
-    margin-bottom: 0.7rem;
   }
 `
 
 export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 1.5rem;
 
   @media ${props => props.theme.mediaQueries.lg} {
     margin: 0;

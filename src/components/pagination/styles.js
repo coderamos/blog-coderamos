@@ -10,6 +10,7 @@ export const PaginationContainer = styled.section`
 
   @media ${props => props.theme.mediaQueries.lg} {
     font-size: 0.8rem;
+    margin-bottom: 0.75rem;
     padding: 1rem;
   }
 `

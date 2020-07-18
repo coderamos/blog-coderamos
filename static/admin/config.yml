@@ -1,0 +1,59 @@
+backend:
+  name: github
+  repo: coderamos/blog-coderamos
+  branch: master
+  site_domain: https://coderamos.netlify.app/
+
+publish_mode: editorial_workflow
+media_folder: 'static/assets/images'
+public_folder: 'assets/images'
+
+collections:
+  - name: 'posts' # Used in routes, e.g., /admin/collections/blog
+    label: 'POST' # Used in the UI
+    folder: 'posts' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'title', name: 'title', widget: 'string' }
+      - {
+          label: 'category',
+          name: 'category',
+          widget: 'select',
+          options:
+            [
+              'css',
+              'currículo && emprego',
+              'git && github',
+              'html',
+              'js',
+              'react',
+              'styled-components',
+              'typescript',
+            ],
+        }
+      - {
+          label: 'color',
+          name: 'tagColor',
+          widget: 'select',
+          options:
+            [
+              { label: 'css', value: '#3596D0' },
+              { label: 'currículo e emprego', value: '#00109B' },
+              { label: 'git e github', value: '#171515' },
+              { label: 'html', value: '#DD4D25' },
+              { label: 'js', value: '#F7DF1E' },
+              { label: 'react', value: '#00D9FF' },
+              { label: 'styled-components', value: '#FE5960' },
+              { label: 'typescript', value: '#328ACD' },
+            ],
+        }
+      - { label: 'description', name: 'description', widget: 'string' }
+      - {
+          label: 'date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'YYYY-MM-DD hh:mm:ss',
+        }
+      - { label: 'image', name: 'thumbnail', widget: 'image' }
+      - { label: 'body', name: 'body', widget: 'markdown' }
