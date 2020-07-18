@@ -23,8 +23,8 @@ collections:
           options:
             [
               'css',
-              'currículo && emprego',
-              'git && github',
+              'currículo e emprego',
+              'git e github',
               'html',
               'js',
               'react',
