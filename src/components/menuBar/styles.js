@@ -1,13 +1,15 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import styled, { css } from 'styled-components'
+
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
+import { ArrowUp } from '@styled-icons/feather/ArrowUp'
+import { Grid } from '@styled-icons/feather/Grid'
 import { Home } from '@styled-icons/feather/Home'
+import { List } from '@styled-icons/feather/List'
+import { Moon } from '@styled-icons/feather/Moon'
 import { Search } from '@styled-icons/feather/Search'
 import { Sun } from '@styled-icons/feather/Sun'
-import { Moon } from '@styled-icons/feather/Moon'
-import { Grid } from '@styled-icons/feather/Grid'
-import { List } from '@styled-icons/feather/List'
-import { ArrowUp } from '@styled-icons/feather/ArrowUp'
 
 const iconStyle = css`
   color: var(--text);

@@ -1,8 +1,9 @@
 import React from 'react'
-import * as s from './styles'
+
 import Profile from '../profile'
 import SocialLinks from '../socialLinks'
-import MenuLinks from '../menuLinks'
+
+import * as s from './styles'
 
 const Sidebar = () => {
   return (

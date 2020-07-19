@@ -1,11 +1,16 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import * as s from './styles'
-import Sidebar from '../sidebar'
-import MenuBar from '../menuBar'
+
 import { ThemeProvider } from 'styled-components'
-import { GlobalStyle, theme } from '../../styles'
+
 import { TransitionPortal } from 'gatsby-plugin-transition-link'
+
+import PropTypes from 'prop-types'
+
+import MenuBar from '../menuBar'
+import Sidebar from '../sidebar'
+
+import { GlobalStyle, theme } from '../../styles'
+import * as s from './styles'
 
 const Layout = ({ children }) => {
   return (

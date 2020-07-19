@@ -1,10 +1,13 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 import React from 'react'
+
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
-import PostItem from '../components/postItem'
 import Pagination from '../components/pagination'
+import PostItem from '../components/postItem'
+import SEO from '../components/seo'
 
 import * as s from '../components/list/styles'
 
@@ -59,6 +62,7 @@ const BlogPost = props => {
             index
           ) => (
             <PostItem
+              // eslint-disable-next-line react/no-array-index-key
               key={index}
               postURL={postURL}
               tagColor={tagColor}

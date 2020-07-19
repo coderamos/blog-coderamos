@@ -1,7 +1,10 @@
 import React from 'react'
-import * as s from './styles'
+
 import PropTypes from 'prop-types'
+
 import getThemeColor from '../../utils/getThemeColor'
+
+import * as s from './styles'
 
 const RecommendedPosts = ({ next, previous }) => {
   return (
@@ -51,6 +54,11 @@ RecommendedPosts.propTypes = {
       postURL: PropTypes.string.isRequired,
     }),
   }),
+}
+
+RecommendedPosts.defaultProps = {
+  next: null,
+  previous: null,
 }
 
 export default RecommendedPosts

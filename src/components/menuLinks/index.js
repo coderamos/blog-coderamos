@@ -1,13 +1,16 @@
 import React from 'react'
-import * as s from './styles'
-import links from './content'
+
 import getThemeColor from '../../utils/getThemeColor'
+import links from './content'
+
+import * as s from './styles'
 
 const MenuLinks = () => {
   return (
     <s.MenuLinksContainer>
       <s.MenuLinksList>
         {links.map((link, index) => (
+          // eslint-disable-next-line react/no-array-index-key
           <s.MenuLinksItem key={index}>
             <s.MenuLinksLink
               to={link.url}

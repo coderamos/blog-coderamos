@@ -1,10 +1,14 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
-import * as s from '../components/post/styles'
+
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import RecommendedPosts from '../components/recommendedPosts'
+
 import Comments from '../components/comments'
+import Layout from '../components/layout'
+import RecommendedPosts from '../components/recommendedPosts'
+import SEO from '../components/seo'
+
+import * as s from '../components/post/styles'
 
 export const query = graphql`
   query Post($postURL: String!) {
@@ -44,7 +48,7 @@ const BlogPost = ({ data, pageContext }) => {
         <s.PostDescription>{post.frontmatter.description}</s.PostDescription>
       </s.PostHeader>
       <s.PostContent>
-        <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </s.PostContent>
       <RecommendedPosts next={nextPost} previous={previousPost} />
       <Comments postURL={post.fields.postURL} title={post.frontmatter.title} />

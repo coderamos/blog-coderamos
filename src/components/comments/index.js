@@ -1,8 +1,9 @@
 import React from 'react'
-import * as s from './styles'
+import ReactDisqusComments from 'react-disqus-comments'
+
 import PropTypes from 'prop-types'
 
-import ReactDisqusComments from 'react-disqus-comments'
+import * as s from './styles'
 
 const Comments = ({ postURL, title }) => {
   const completeURL = `https://coderamos.com.br${postURL}`

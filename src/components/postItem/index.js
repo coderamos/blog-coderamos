@@ -1,7 +1,10 @@
 import React from 'react'
+
 import PropTypes from 'prop-types'
-import * as s from './styles'
+
 import getThemeColor from '../../utils/getThemeColor'
+
+import * as s from './styles'
 
 const PostItem = ({
   postURL,
@@ -42,6 +45,11 @@ PostItem.propTypes = {
   timeToRead: PropTypes.number,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+}
+
+PostItem.defaultProps = {
+  tagColor: null,
+  timeToRead: null,
 }
 
 export default PostItem

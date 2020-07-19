@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { useStaticQuery, graphql } from 'gatsby'
+
 import * as s from './styles'
 
 const Avatar = () => {

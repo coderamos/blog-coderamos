@@ -1,3 +1,4 @@
+/* eslint-disable radix */
 const postsQuery = ` {
   posts: allMarkdownRemark(
     sort: { order: DESC, fields: frontmatter___date }

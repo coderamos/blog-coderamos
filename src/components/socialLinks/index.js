@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Icons from './icons'
 import links from './content'
+import Icons from './icons'
 
 import * as s from './styles'
 
@@ -11,6 +11,7 @@ const SocialLinks = () => (
       {links.map((link, index) => {
         const Icon = Icons[link.label]
         return (
+          // eslint-disable-next-line react/no-array-index-key
           <s.SocialLinksItem key={index}>
             <s.SocialLinksLink
               href={link.url}

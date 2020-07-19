@@ -1,20 +1,22 @@
 import React from 'react'
+
 import { useStaticQuery, graphql } from 'gatsby'
-import Avatar from '../avatar'
-import * as s from './styles'
+
 import getThemeColor from '../../utils/getThemeColor'
+import Avatar from '../avatar'
+
+import * as s from './styles'
 
 const Profile = () => {
   const {
     site: {
-      siteMetadata: { title, position, description },
+      siteMetadata: { position },
     },
   } = useStaticQuery(graphql`
     query MySiteMetadata {
       site {
         siteMetadata {
           position
-          description
         }
       }
     }

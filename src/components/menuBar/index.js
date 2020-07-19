@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import * as s from './styles'
+
 import getThemeColor from '../../utils/getThemeColor'
+
+import * as s from './styles'
 
 const MenuBar = () => {
   const [theme, setTheme] = useState('dark')
