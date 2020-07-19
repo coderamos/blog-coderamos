@@ -14,6 +14,16 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: ['UA-173040914-1'],
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `uploads`,
