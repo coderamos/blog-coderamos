@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const MenuLinksContainer = styled.nav`
-  width: 100%;
   display: flex;
   justify-content: center;
 

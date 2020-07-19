@@ -23,7 +23,7 @@ const MenuBar = () => {
           title="home"
           cover
           bg={getThemeColor()}
-          direction="left"
+          direction="up"
           duration={0.6}
         >
           <s.MenuBarItem>

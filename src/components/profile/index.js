@@ -31,11 +31,11 @@ const Profile = () => {
       >
         <Avatar />
         <s.ProfileAuthor>
-          Diego Ramos
-          <s.ProfilePosition>{position}</s.ProfilePosition>
+          <s.ProfileName>
+            Diego Ramos <s.ProfilePosition>| {position}</s.ProfilePosition>
+          </s.ProfileName>
         </s.ProfileAuthor>
       </s.ProfileLink>
-      <s.ProfileDescription>{description}</s.ProfileDescription>
     </s.ProfileContainer>
   )
 }

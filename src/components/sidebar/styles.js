@@ -1,22 +1,17 @@
 import styled from 'styled-components'
 
 export const SideBarContainer = styled.aside`
+  display: flex;
   align-items: center;
   background: var(--primary);
-  border-right: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  padding: 2rem;
-  position: fixed;
-  text-align: center;
+  padding: 0.5rem 2rem;
+  justify-content: space-around;
   transition: background 0.4s;
-  width: 20rem;
+
+  width: 100vw;
+  height: 2rem;
 
   @media ${props => props.theme.mediaQueries.lg} {
-    align-items: flex-start;
-    height: auto;
-    padding: 1rem 2rem;
-    width: 100%;
+    padding: 0.5rem 0;
   }
 `

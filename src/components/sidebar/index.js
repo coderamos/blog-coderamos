@@ -9,7 +9,6 @@ const Sidebar = () => {
     <s.SideBarContainer>
       <Profile />
       <SocialLinks />
-      <MenuLinks />
     </s.SideBarContainer>
   )
 }

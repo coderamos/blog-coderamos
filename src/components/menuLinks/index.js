@@ -14,7 +14,7 @@ const MenuLinks = () => {
               activeClassName="active"
               cover
               bg={getThemeColor()}
-              direction="left"
+              direction="up"
               duration={0.6}
             >
               {link.label.toUpperCase()}

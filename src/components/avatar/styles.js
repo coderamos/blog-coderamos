@@ -2,10 +2,11 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 export const AvatarContainer = styled(Img)`
-  border-radius: 50%;
-  height: 3.75rem;
+  border-radius: 10%;
+  height: 2rem;
   margin: auto;
-  width: 3.75rem;
+  width: 2rem;
+  flex-shrink: 0;
 
   @media ${props => props.theme.mediaQueries.lg} {
     width: 1.875rem;
