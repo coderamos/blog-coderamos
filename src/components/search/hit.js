@@ -2,6 +2,7 @@ import React from 'react'
 import PostItem from '../postItem'
 
 const Hit = ({ hit }) => {
+  console.log(hit)
   return (
     <PostItem
       category={hit.category}

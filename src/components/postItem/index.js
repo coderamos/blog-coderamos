@@ -24,7 +24,7 @@ const PostItem = ({
         <s.PostItemTag tagColor={tagColor}>{category}</s.PostItemTag>
         <s.PostItemInfo>
           <s.PostItemDate>
-            {date} &middot; {timeToRead} min
+            {date} {timeToRead && `| Leia de ${timeToRead} min`}
           </s.PostItemDate>
           <s.PostItemTitle>{title}</s.PostItemTitle>
           <s.PostItemDescription>{description}</s.PostItemDescription>
