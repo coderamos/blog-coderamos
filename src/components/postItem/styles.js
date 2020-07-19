@@ -5,9 +5,10 @@ export const PostItemLink = styled(AniLink)`
   color: var(--text);
   display: flex;
   text-decoration: none;
+  transition: background 0.4s;
 
   &:hover {
-    color: var(--secondary);
+    background-color: var(--secondary);
   }
 
   body#grid & {
@@ -18,17 +19,23 @@ export const PostItemLink = styled(AniLink)`
 
 export const PostItemContainer = styled.section`
   align-items: flex-start;
-  border-bottom: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
   width: 100%;
+  transition: background 0.4s;
 
   body#grid & {
     border: none;
+
     flex-direction: column;
     justify-content: center;
     padding: 2rem 1rem;
+
+    &:hover {
+      background-color: var(--secondary);
+    }
   }
 
   @media ${props => props.theme.mediaQueries.lg} {
@@ -42,7 +49,7 @@ export const PostItemTag = styled.div`
   align-items: center;
   background: ${props =>
     props.tagColor ? props.tagColor : 'var(--secondary)'};
-  color: var(--text);
+  color: var(--white);
   display: flex;
   font-size: 1rem;
   font-weight: 700;

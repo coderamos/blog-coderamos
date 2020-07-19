@@ -71,6 +71,8 @@ export default createGlobalStyle`
     --border: #111111;
     --link: #F81CE5;
     --text: #FFFFFF;
+    --white: #FFFFFF;
+    --black: #000000;
   }
 
   body.light {
@@ -79,5 +81,7 @@ export default createGlobalStyle`
     --border: #CCCCCC;
     --link: #F81CE5;
     --text: #222222;
+    --white: #FFFFFF;
+    --black: #000000;
   }
 `

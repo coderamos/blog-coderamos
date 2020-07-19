@@ -1,6 +1,6 @@
 # blog | CODERAMOS
 
-##### my personal blog to talk about front end development, UX and UI...
+##### My personal blog to talk about curriculum, jobs and programming
 
 ## About This Project
 
@@ -27,13 +27,6 @@ Learn how to install `yarn` through the [official documentation](https://yarnpkg
 Run the app in the development mode by opening [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 The page will reload if you make edits. You will also see any lint errors in the console.
-
-## Main Tecnologies Used
-
-<!-- #### [gatsby]()
-
-#### [styled-components](https://styled-components.com/)
- -->
 
 ## About Me
 

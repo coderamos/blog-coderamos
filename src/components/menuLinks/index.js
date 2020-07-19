@@ -17,7 +17,7 @@ const MenuLinks = () => {
               direction="left"
               duration={0.6}
             >
-              {link.label}
+              {link.label.toUpperCase()}
             </s.MenuLinksLink>
           </s.MenuLinksItem>
         ))}

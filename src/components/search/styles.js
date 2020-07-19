@@ -16,11 +16,11 @@ export const SearchContainer = styled.section`
 
   .ais-SearchBox,
   .ais-Stats {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
   }
 
   .ais-SearchBox {
-    padding-top: 2rem;
+    padding-top: 2rem 1rem;
 
     @media ${props => props.theme.mediaQueries.lg} {
       padding: 1rem;
@@ -28,7 +28,7 @@ export const SearchContainer = styled.section`
   }
 
   .ais-Stats {
-    color: var(--secondary);
+    color: var(--text);
 
     @media ${props => props.theme.mediaQueries.lg} {
       padding: 0.5rem 1rem;
