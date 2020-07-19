@@ -62,7 +62,12 @@ const MenuBar = () => {
         >
           {display === 'list' ? <s.GridIcon /> : <s.ListIcon />}
         </s.MenuBarItem>
-        <s.MenuBarItem title="top">
+        <s.MenuBarItem
+          title="top"
+          onClick={() => {
+            document.documentElement.scrollTop = 0
+          }}
+        >
           <s.ArrowUpIcon />
         </s.MenuBarItem>
       </s.MenuBarWrapper>
