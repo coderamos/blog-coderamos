@@ -34,7 +34,7 @@ export const ProfileName = styled.h1`
   font-size: 1.6rem;
 
   @media ${props => props.theme.mediaQueries.lg} {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
   }
 `
 
@@ -42,7 +42,7 @@ export const ProfilePosition = styled.span`
   font-weight: 300;
 
   @media ${props => props.theme.mediaQueries.lg} {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
   }
 `
 

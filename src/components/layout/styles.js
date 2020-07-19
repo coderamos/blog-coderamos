@@ -11,7 +11,7 @@ export const LayoutContainer = styled.section`
 export const LayoutContent = styled.main`
   background: var(--primary);
   min-height: 100vh;
-  padding: 3rem 3.75rem 0 24rem;
+  padding: 3rem 20rem 0;
   transition: background 0.4s;
   width: 100%;
 

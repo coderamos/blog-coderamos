@@ -10,7 +10,7 @@ export const SideBarContainer = styled.aside`
   box-shadow: 0 6px 6px -6px var(--black);
 
   width: 100vw;
-  height: 2rem;
+  height: 3rem;
 
   @media ${props => props.theme.mediaQueries.lg} {
     padding: 0.5rem 0;
