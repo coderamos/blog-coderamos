@@ -7,6 +7,7 @@ export const SideBarContainer = styled.aside`
   padding: 0.5rem 2rem;
   justify-content: space-around;
   transition: background 0.4s;
+  box-shadow: 0 6px 6px -6px var(--black);
 
   width: 100vw;
   height: 2rem;
