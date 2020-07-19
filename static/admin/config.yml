@@ -55,5 +55,5 @@ collections:
           widget: 'datetime',
           format: 'YYYY-MM-DD hh:mm:ss',
         }
-      - { label: 'image', name: 'thumbnail', widget: 'image' }
+      - { label: 'image', name: 'image', widget: 'image' }
       - { label: 'body', name: 'body', widget: 'markdown' }
