@@ -2,7 +2,7 @@
 title: Um pedaço do meu código foi parar no Ártico!
 category: git e github
 tagColor: "#171515"
-description: O que é o GitHub Archive Program e como isso aconteceu?
+description: O que é o GitHub Archive Program?
 date: 2020-07-19 06:31:36
 image: assets/images/piqfilm.jpg
 ---
