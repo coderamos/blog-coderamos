@@ -24,6 +24,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `http://coderamos.netlify.app/`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `uploads`,
