@@ -30,7 +30,9 @@ Apesar do styled-components ser muito conhecido e adotado, é comum vermos muito
 
 Esse é um exemplo de como criamos e exportamos um estilizado com styled-components:
 
-`export const ExampleComponentContainer = styled.div``;`
+```jsx
+export const ExampleComponentContainer = styled.div``;
+```
 
 Podemos acessar todas as outras tags como propriedades do styled, como `styled.header`, `styled.nav`, `styled.section`, `styled.article`, `styled.aside`, `styled.footer`, dentre outras.
 
