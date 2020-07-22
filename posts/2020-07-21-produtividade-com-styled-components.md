@@ -28,7 +28,7 @@ Como exemplo, essa é a estrutura dos arquivos de estilo que utilizei em um temp
 
 Apesar do styled-components ser muito conhecido e adotado, é comum vermos muitos componentes de agrupamento e que deveriam possui escopo semântico, sendo criados como uma simples `div`. É extremamente importante não esquecermos de utilizar as tags de forma correta  e consciente.
 
-Esse é um exemplo de como criamos e exportamos um estilizado com styled-components:
+Esse é um exemplo de como criamos e exportamos um componente estilizado com styled-components:
 
 ```jsx
 export const ExampleComponentContainer = styled.div``;
