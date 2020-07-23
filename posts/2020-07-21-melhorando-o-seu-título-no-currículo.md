@@ -16,7 +16,7 @@ Partindo desse ponto, percebo que existem duas respostas diferentes: a que trata
 
 E é sobre a segunda opção que eu quero tratar aqui.
 
-Como você já deve ter observado, eu optei pela utilização do termo `Front End` e foi por um motivo bem simples: é o termo buscado no Google dentre as três opções, na *maioria* dos países, inclusive o Brasil.
+Como você já deve ter observado, eu optei pela utilização do termo `Front End` e foi por um motivo bem simples: é o termo buscado no Google dentre as três opções, na **maioria** dos países, inclusive o Brasil.
 
 ![trends front end](assets/images/trends_front_end.png "trends front end")
 
