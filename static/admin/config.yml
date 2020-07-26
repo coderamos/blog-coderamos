@@ -22,6 +22,7 @@ collections:
           widget: 'select',
           options:
             [
+              'code pattern',
               'css',
               'currículo e emprego',
               'git e github',
@@ -39,6 +40,7 @@ collections:
           widget: 'select',
           options:
             [
+              { label: 'code pattern', value: '#009D3B' },
               { label: 'css', value: '#3596D0' },
               { label: 'currículo e emprego', value: '#00109B' },
               { label: 'git e github', value: '#171515' },
