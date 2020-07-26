@@ -47,6 +47,8 @@ export const MenuBarContainer = styled.aside`
 export const MenuBarWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
 
   @media ${props => props.theme.mediaQueries.lg} {
     flex-direction: row;
