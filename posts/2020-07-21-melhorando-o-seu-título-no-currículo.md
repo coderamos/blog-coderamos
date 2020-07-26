@@ -16,11 +16,13 @@ Partindo desse ponto, percebo que existem duas respostas diferentes: a que trata
 
 E é sobre a segunda opção que eu quero tratar aqui.
 
-Como você já deve ter observado, eu optei pela utilização do termo `Front End` e foi por um motivo bem simples: é o termo buscado no Google dentre as três opções.
+Como você já deve ter observado, eu optei pela utilização do termo `Front End` e foi por um motivo bem simples: é o termo buscado no Google dentre as três opções, na **maioria** dos países, inclusive o Brasil.
 
 ![trends front end](assets/images/trends_front_end.png "trends front end")
 
 Acredito que usar o termo correto mais buscado traz mais chances de ser encontrado por um recrutador, visto que os mecanismos de buscas ranqueiam melhor os termos mais buscados em comparação aos menos buscados.
+
+Se o seu objetivo é ser achado por recrutadores fora do Brasil, vale a pena checar no [Google Trends](https://trends.google.com.br/trends/explore?geo=BR&q=front%20end,front-end,frontend) qual é o termo mais buscado lá.
 
 E você, possui alguma justificativa para não usar dessa forma?
 
