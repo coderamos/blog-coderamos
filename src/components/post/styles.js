@@ -57,6 +57,7 @@ export const PostContent = styled.section`
   h2,
   h3,
   h4,
+  h5,
   ul,
   ol,
   .tags,
@@ -169,10 +170,6 @@ export const PostContent = styled.section`
 
   h3 {
     font-size: 1.6rem;
-
-    @media ${props => props.theme.mediaQueries.lg} {
-      font-size: 1.125rem;
-    }
   }
 
   h4 {
