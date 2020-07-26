@@ -1,5 +1,5 @@
 ---
-title: Absolute import e suas vantagens
+title: Paths personalizados e suas vantagens
 category: code pattern
 tagColor: "#009D3B"
 description: Deixando os seus imports mais elegantes e organizados
