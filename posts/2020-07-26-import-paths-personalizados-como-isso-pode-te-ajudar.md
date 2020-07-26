@@ -1,5 +1,5 @@
 ---
-title: Import paths personalizados como isso pode te ajudar
+title: Import paths personalizados e como isso pode te ajudar
 category: code pattern
 tagColor: "#009D3B"
 description: Deixando os seus imports mais elegantes e organizados
