@@ -11,7 +11,7 @@ Se existe uma dor que me incomoda quando estou desenvolvendo uma aplicação com
 É comum vermos que a medida que a nossa aplicação vai crescendo, as pastas dos arquivos do nosso projeto vão se aninhando cada vez mais dentro de outras pastas, e quando menos esperamos nos deparamos com o seguinte exemplo de import:
 
 ```jsx
-import ExampleComponent from '../../../../../../src/components/ExampleComponent/
+import ExampleComponent from '../../../../../../src/components/ExampleComponent/'
 ```
 
 O exemplo acima é real e é muito mais comum do que imaginamos. Infelizmente o uso excessivo desses `../` traz algumas dores quando precisamos dar manutenção ao nosso código, dentre elas, o retrabalho de consertar o caminho relativo toda vez que precisamo alterar o local de um arquivo importador ou do arquivo importado.
@@ -19,7 +19,7 @@ O exemplo acima é real e é muito mais comum do que imaginamos. Infelizmente o 
 Uma das formas mais simples de deixarmos esse import mais elegante e organizado é criando um path personalizado e deixando-o como absoluto. Dessa forma, o exemplo acima poderia ficar assim:
 
 ```jsx
-import ExampleComponent from '~/components/ExampleComponent/
+import ExampleComponent from '~/components/ExampleComponent/'
 ```
 
 No exemplo acima, o prefixo `~` foi configurado como um caminho absoluto de um diretório do nosso projeto, nesse caso o diretório é a pasta `src`. Dessa forma, não importa em qual pasta o nosso arquivo esteja, quando utilizamos o prefixo `~/` sempre estaremos importando o path absoluto da pasta `src`.
@@ -108,7 +108,7 @@ Como você pode observar, estamos substituindo todos os scripts `react-scripts` 
 Agora podemos utilizar qualquer arquivo dentro da nossa pasta `src` utilizando o `~/` no momento do import.
 
 ```jsx
-import ExampleComponent from '~/components/ExampleComponent/
+import ExampleComponent from '~/components/ExampleComponent/'
 ```
 
 ### E...
