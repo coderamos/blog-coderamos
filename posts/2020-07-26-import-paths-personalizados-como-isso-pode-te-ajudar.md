@@ -6,7 +6,7 @@ description: Deixando os seus imports mais elegantes e organizados
 date: 2020-07-26 03:52:29
 image: assets/images/coderamos.png
 ---
-Se existe uma dor que me incomoda quando estou desenvolvendo uma aplicação com muitos arquivos que chamam outros arquivos, é o excesso de `../../` nos imports desses arquivos.
+Se existe uma dor que me incomoda quando estou desenvolvendo uma aplicação com muitos arquivos, é quando esses arquivos importam outros arquivos, e isso provoca um excesso de `../` nos imports desses arquivos.
 
 É comum vermos que a medida que a nossa aplicação vai crescendo, as pastas dos arquivos do nosso projeto vão se aninhando cada vez mais dentro de outras pastas, e quando menos esperamos nos deparamos com o seguinte exemplo de import:
 
@@ -14,7 +14,7 @@ Se existe uma dor que me incomoda quando estou desenvolvendo uma aplicação com
 import ExampleComponent from '../../../../../../src/components/ExampleComponent/'
 ```
 
-O exemplo acima é real e é muito mais comum do que imaginamos. Infelizmente o uso excessivo desses `../` traz algumas dores quando precisamos dar manutenção ao nosso código, dentre elas, o retrabalho de consertar o caminho relativo toda vez que precisamo alterar o local de um arquivo importador ou do arquivo importado.
+O exemplo acima é real e é muito mais comum do que imaginamos. Infelizmente o uso excessivo desses `../` traz algumas dores no momento em que precisamos dar manutenção ao nosso código, dentre elas, o retrabalho de consertar o caminho relativo toda vez que precisamos alterar o local de um arquivo importado ou do arquivo importador.
 
 Uma das formas mais simples de deixarmos esse import mais elegante e organizado é criando um path personalizado e deixando-o como absoluto. Dessa forma, o exemplo acima poderia ficar assim:
 
@@ -22,7 +22,7 @@ Uma das formas mais simples de deixarmos esse import mais elegante e organizado 
 import ExampleComponent from '~/components/ExampleComponent/'
 ```
 
-No exemplo acima, o prefixo `~` foi configurado como um caminho absoluto de um diretório do nosso projeto, nesse caso o diretório é a pasta `src`. Dessa forma, não importa em qual pasta o nosso arquivo esteja, quando utilizamos o prefixo `~/` sempre estaremos importando o path absoluto da pasta `src`.
+No exemplo acima, o prefixo `~` foi configurado como um caminho absoluto de um diretório do nosso projeto, nesse caso o diretório é a pasta `src`. Dessa forma, não importa em qual pasta o nosso arquivo esteja, quando utilizarmos o prefixo `~/`, sempre estaremos importando o path absoluto da pasta `src`.
 
 Bem louco né?!
 
@@ -52,9 +52,9 @@ yarn add -D babel-plugin-root-import
 
 #### Criando o 'config-overrides.js'
 
-Agora na raiz do nosso projeto, criaremos um arquivo chamado `config-overrides.js`. Ele será o responsável por estabelecer a pasta raiz do nosso projeto.
+Também na raiz do nosso projeto, criaremos um arquivo chamado `config-overrides.js`. Ele será o responsável por estabelecer a pasta raiz do nosso projeto.
 
-Insira esse código no arquivo:
+Vamos inserir esse código no arquivo:
 
 ```jsx
 const { addBabelPlugin, override } = require('customize-cra')
@@ -71,9 +71,9 @@ module.exports = override(
 
 #### Facilitando a vida do ~~dev~~ editor
 
-Na raiz do nosso projeto, criaremos um arquivo chamado `jsconfig.json`. Ele será o responsável por fazer com que o VSCODE entender os paths personalizados.
+Ainda na raiz do nosso projeto, criaremos um arquivo chamado `jsconfig.json`. Ele será o responsável por fazer com que o VSCODE entenda os paths personalizados.
 
-vamos inserir esse código no arquivo:
+Vamos inserir esse código no arquivo:
 
 ```json
 {
@@ -88,7 +88,7 @@ vamos inserir esse código no arquivo:
 
 #### Últimos detalhes
 
-Por último, precisamos atualizar os scripts no arquivo `package.json`. Deixe-os dessa forma:
+Por último, atualizaremos os scripts no arquivo `package.json`. Deixe-os dessa forma:
 
 ```json
 {
