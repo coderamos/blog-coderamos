@@ -71,7 +71,7 @@ Esse aninhamento não é uma boa prática, porque você acaba criando uma especi
 
 ![deselegante](https://media.giphy.com/media/dCB56ll26OPsdTg7ou/giphy.gif)
 
-## STYLED-COMPONENTS, seu novo amiguinho
+## STYLED-COMPONENTS, seu amiguinho
 
 Styled Components é uma biblioteca que, através de um conjunto de práticas, resolve problemas complexos do CSS.
 
