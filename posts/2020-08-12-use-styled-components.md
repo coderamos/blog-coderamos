@@ -6,9 +6,9 @@ description: e se livre de muitos problemas
 date: 2020-08-12 07:18:36
 image: assets/images/captura-de-tela-de-2020-08-12-17-30-39.png
 ---
-## CSS, gente boa
+## CSS, o cara legal
 
-> CSS é muito difícil. Se te dizem o contrário, é porque só querem te deixar feliz.
+> CSS é muito difícil. Se te dizem o contrário, é porque só querem te deixar feliz
 
 Não me leve a mal. É bem legal trabalhar com CSS e muitas vezes temos muito prazer em conseguir criar nossos ~~desenhos~~ componentes e páginas, mas o CSS também tem vários problemas. 
 
@@ -16,7 +16,7 @@ Os principais problemas ocorrem quando estamos estilizando uma aplicação muito
 
 Muitas vezes nem sabemos mais quais são todos os componentes que existem na nossa aplicação. Também existem várias outras pessoas desenvolvendo junto com a gente.
 
-> CSS está atrás do seu tempo.
+> CSS ~~não está~~ a frente do seu tempo
 
 O CSS, está evoluindo. Já temos funcionalidades bem legais, como por exemplo a possibilidade de utilizarmos variáveis dentro do CSS, mas mesmo com algumas funcionalidades novas, ainda temos alguns problemas.
 
@@ -24,9 +24,9 @@ O CSS, está evoluindo. Já temos funcionalidades bem legais, como por exemplo a
 
 > **No começo**:  vou arrumar aqui, e... ops quebrou ali, é só arrumar aqui e ali.
 >
-> **No fim**: parece que estou no começo.
+> **No fim**: parece que estou no começo
 
-## CSS problems
+## Problemas conhecidos
 
 Alguns dos principais problemas de CSS são:
 
@@ -71,9 +71,9 @@ Esse aninhamento não é uma boa prática, porque você acaba criando uma especi
 
 ![deselegante](https://media.giphy.com/media/dCB56ll26OPsdTg7ou/giphy.gif)
 
-## styled-components
+## STYLED-COMPONENTS, seu amiguinho
 
-Styled Components é uma biblioteca que, através de um conjunto de ideias, resolve problemas complexos do CSS.
+Styled Components é uma biblioteca que, através de um conjunto de práticas, resolve problemas complexos do CSS.
 
 As principais vantagens na utilização do **styled-components** são:
 
