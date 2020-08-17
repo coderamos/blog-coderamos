@@ -44,8 +44,6 @@ Muitas vezes quando precisamos atualizar um estilo, acabamos quebrando outro est
 
 > Less, Sass, Stylus. Como vivem? O que comem?
 
-![sass not less - batman](https://memegenerator.net/img/instances/55042898/sass-not-less.jpg)
-
 Os pré-processadores estão aí e ajudam muito, principalmente com a possibilidade de utilizar variáveis no CSS (recurso que antes não existia no css, mas agora existe) e com a facilidade em trabalhar com aninhamento de estilos (cascatas), mas continuaram com os problemas clássicos, além de abrir margem para **péssimas práticas**, como por exemplo o aninhamento excessivo:
 
 ```scss
@@ -67,9 +65,11 @@ nav ul li a { ... }
 
 Quem nunca viu um código `scss` com todo esse aninhamento, não é mesmo?
 
+![deselegante](https://media.giphy.com/media/dCB56ll26OPsdTg7ou/giphy.gif)
+
 Esse aninhamento não é uma boa prática, porque você acaba criando uma especificidade enorme para esse componente, e consequentemente se quisermos alterar esse estilo em algum outro lugar, precisaremos deixar esse código ainda mais específico, muitas vezes precisando inserir um `id` ou mais um `seletor`, ou até mesmo um `!important`, o que não é nada legal.
 
-![deselegante](https://media.giphy.com/media/dCB56ll26OPsdTg7ou/giphy.gif)
+![!important is wrong](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEre0SNjz-tMDNBR7PeGEeqc2B6htOB6-MKA&usqp=CAU)
 
 ## STYLED-COMPONENTS, seu amiguinho
 
