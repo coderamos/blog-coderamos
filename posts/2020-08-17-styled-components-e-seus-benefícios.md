@@ -44,7 +44,7 @@ Muitas vezes quando precisamos atualizar um estilo, acabamos quebrando outro est
 
 > Less, Sass, Stylus. Como vivem? O que comem?
 
-![sass not less - batman](https://memegenerator.net/img/instances/55042898/sass-not-less.jpg)
+![!important is wrong](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEre0SNjz-tMDNBR7PeGEeqc2B6htOB6-MKA&usqp=CAU)
 
 Os pré-processadores estão aí e ajudam muito, principalmente com a possibilidade de utilizar variáveis no CSS (recurso que antes não existia no css, mas agora existe) e com a facilidade em trabalhar com aninhamento de estilos (cascatas), mas continuaram com os problemas clássicos, além de abrir margem para **péssimas práticas**, como por exemplo o aninhamento excessivo:
 
