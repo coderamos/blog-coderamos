@@ -30,15 +30,15 @@ O CSS, está evoluindo. Já temos funcionalidades bem legais, como por exemplo a
 
 Alguns dos principais problemas de CSS são:
 
-- **COLISÃO DE ESTILOS**
+* **COLISÃO DE ESTILOS**
 
 Como o CSS não é definido por componente ou por página, ele é carregado para o nosso site e o estilo é aplicado sobre todo o HTML visível. Quando precisamos importar alguma biblioteca, pode acontecer que essa biblioteca possua as mesmas classes ou possua uma especificidade maior que acaba colidindo com o nosso código, gerando alguns problemas no estilo da nossa aplicação.
 
-- **CÓDIGO NÃO UTILIZADO**
+* **CÓDIGO NÃO UTILIZADO**
 
 Muitas vezes escrevemos o CSS pensando em várias formas de representar um componente, como por exemplo, botões de diferentes formas. Precisamos carregar o CSS de todos os estilos, mas não necessariamente precisamos utilizar todos os estilos em na mesma página. Com isso, acabamos carregando todos os estilos de botões que não serão utilizados ali. Isso trás mais problemas para o *client* que acaba gastando mais banda sem necessidade.
 
-- **DIFICULDADE NA MANUTENÇÃO**
+* **DIFICULDADE NA MANUTENÇÃO**
 
 Muitas vezes quando precisamos atualizar um estilo, acabamos quebrando outro estilo em outra parte do código que não tem nada a ver com o primeiro estilo. Isso faz com que a manutenção seja muito mais custosa do que deveria ser e precisamos ficar "cavando" muito código para não corremos o risco de quebrar algo que não deveria ser quebrado.
 
@@ -77,33 +77,33 @@ Styled Components é uma biblioteca que, através de um conjunto de práticas, r
 
 As principais vantagens na utilização do **styled-components** são:
 
-- **CRITICAL CSS AUTOMÁTICO**
+* **CRITICAL CSS AUTOMÁTICO**
 
 O styled-components monitora quais componentes são renderizados em uma página e só injeta os estilos desses componentes, de forma totalmente automática. Isso significa que o *client* carrega a menor quantidade de código necessária para a renderização.
 
-- **ESCOPO DEFINIDO**
+* **ESCOPO DEFINIDO**
 
 Os estilos são criados para cada componente, de forma isolada. Por mais que os componentes estilizados possam ter o mesmo nome, os estilos não se colidirão pois o escopo é individual.
 
-- **REMOÇÃO DE CSS NÃO UTILIZADO**
+* **REMOÇÃO DE CSS NÃO UTILIZADO**
 
-Todo o CSS não utilizado não é carregado. Se o componente não for utilizado, to o seu estilo será deletado.
+Todo o CSS não utilizado não é carregado. Se o componente não for utilizado, todo o seu estilo será deletado.
 
-- **ESTILOS DINÂMICOS**
+* **ESTILOS DINÂMICOS**
 
 É possível alterar o estilo dos componentes através das `propriedades` e `temas` recebidos.
 
-- **VENDOR PREFIXING AUTOMÁTICO**
+* **VENDOR PREFIXING AUTOMÁTICO**
 
 Propriedades como `-webkit`, `-moz-`, `-ms` e `-o-` não precisam ser mais inseridas, pois o `styled-components` faz esse trabalho de forma automática.
 
 ![wonderful](https://media.giphy.com/media/dycoeyAvTEkaKgvcWT/giphy.gif)
 
-- **MANUTENÇÃO SIMPLIFICADA E SEM DOR**
+* **MANUTENÇÃO SIMPLIFICADA E SEM DOR**
 
 O estilo que está sendo alterado corresponde somente ao componente que o importa.
 
----
+- - -
 
 Styled Components é incrível, não é mesmo?
 
