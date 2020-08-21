@@ -137,7 +137,7 @@ Ainda vou escrever como configurar um tema utilizando styled-components e coloca
 
 Propriedades como `-webkit`, `-moz-`, `-ms` e `-o-` não precisam ser mais inseridas, pois o `styled-components` faz esse trabalho de forma automática.
 
-```sass
+```jsx
 /* com styled-components */
 export const Container = styled.section`
   transition: all 2s linear;
