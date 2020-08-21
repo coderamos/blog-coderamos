@@ -128,6 +128,22 @@ O componente possui a propriedade `outlined`? Se sim, então aplicar o `backgrou
 
 Propriedades como `-webkit`, `-moz-`, `-ms` e `-o-` não precisam ser mais inseridas, pois o `styled-components` faz esse trabalho de forma automática.
 
+```css
+/* sem styled-components */
+.exampleClass {
+  -moz-transition: all 2s linear;
+  -ms-transition: all 2s linear;
+  -o-transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+/* com styled-components */
+.exampleClass {
+  transition: all 2s linear;
+}
+```
+
 ![wonderful](https://media.giphy.com/media/dycoeyAvTEkaKgvcWT/giphy.gif)
 
 - **MANUTENÇÃO SIMPLIFICADA E SEM DOR**
@@ -141,3 +157,4 @@ Styled Components é incrível, não é mesmo?
 [Nesse repositório](https://github.com/coderamos/template-reactjs) você pode observar como eu utilizei `styled-components` de forma bem simples.
 
 Comenta aí se você já utiliza `styled-components`.
+
