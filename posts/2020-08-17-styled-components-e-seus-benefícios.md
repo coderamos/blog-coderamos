@@ -2,27 +2,34 @@
 title: Styled Components e seus benefícios
 category: styled-components
 tagColor: "#FE5960"
-description: As principais vantagens de utilizar essa biblioteca fenomenal
+description: As principais vantagens de utilizar CSS no JavaScript
 date: 2020-08-17 11:11:45
 image: assets/images/captura-de-tela-de-2020-08-12-17-30-39.png
 ---
+
 ## CSS, o cara legal
 
 > CSS é muito difícil. Se te dizem o contrário, é porque só querem te deixar feliz
 
-Não me leve a mal. É bem legal trabalhar com CSS e muitas vezes temos muito prazer em conseguir criar nossos ~~desenhos~~ componentes e páginas, mas o CSS também tem vários problemas. 
+Eu me lembro de quando vi essa frase em um dos cursos do [Willian Justen](https://twitter.com/Willian_justen). Devo ter parado por cinco minutos enquanto refletia sobre o quão verdadeira ela é.
 
-Os principais problemas ocorrem quando estamos estilizando uma aplicação muito grande.
+Não me leve a mal. É bem legal trabalhar com CSS e muitas vezes temos muito prazer em conseguir criar nossos ~~desenhos~~ componentes e páginas com essa tecnologia, mas o CSS também tem vários problemas.
 
-Muitas vezes nem sabemos mais quais são todos os componentes que existem na nossa aplicação e o problema se agrava quando existem várias outras pessoas desenvolvendo junto com a gente.
+Se não nos preocuparmos em minimizar os problemas de CSS e não fizermos o trabalho de prevenção contra más práticas no nosso código, a media que a aplicação cresce, os problemas e as más práticas crescem junto.
 
-> CSS não está a frente do seu tempo
+> Manter padrões é chato, demorado e custa caro, mas só se você fizer da forma errada
+
+É muito difícil que um único programador conheça todos os componentes de uma aplicação, principalmente quando esses sofrem atualizações constantes. Agora imagine um repositório que é mantido por cinco equipes, cada equipe pelo menos quatro desenvolvedores, cada desenvolvedor com práticas e senioridades diferentes.
+
+Ainda bem que existem ferramentas incríveis para facilitar a padronização de código dos nossos projetos, como o ESLint, Prettier e EditorConfig. Essas ferramentas alinhadas a rotinas de `pre-commit` e `pre-push`, facilitam muito a padronização de código e o processo de **code review**. Mas isso é assunto para outro post.
+
+> CSS **não está** a frente do seu tempo
 
 O CSS, está evoluindo. Já temos funcionalidades bem legais, como por exemplo a possibilidade de utilizarmos variáveis dentro do CSS, mas mesmo com algumas funcionalidades novas, ainda temos alguns problemas.
 
 ![amazing gif](https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif)
 
-> **No começo**:  vou arrumar aqui, e... ops quebrou ali..., hummm é só arrumar aqui e ali...
+> **No começo**: vou arrumar aqui, e... ops quebrou ali..., hummm é só arrumar aqui e ali...
 >
 > **No fim**: parece que estou no começo
 
@@ -30,15 +37,15 @@ O CSS, está evoluindo. Já temos funcionalidades bem legais, como por exemplo a
 
 Alguns dos principais problemas de CSS são:
 
-* **COLISÃO DE ESTILOS**
+- **COLISÃO DE ESTILOS**
 
 Como o CSS não é definido por componente ou por página, ele é carregado para o nosso site e o estilo é aplicado sobre todo o HTML visível. Quando precisamos importar alguma biblioteca, pode acontecer que essa biblioteca possua as mesmas classes ou possua uma especificidade maior que acaba colidindo com o nosso código, gerando alguns problemas no estilo da nossa aplicação.
 
-* **CÓDIGO NÃO UTILIZADO**
+- **CÓDIGO NÃO UTILIZADO**
 
-Muitas vezes escrevemos o CSS pensando em várias formas de representar um componente, como por exemplo, botões de diferentes formas. Precisamos carregar o CSS de todos os estilos, mas não necessariamente precisamos utilizar todos os estilos em na mesma página. Com isso, acabamos carregando todos os estilos de botões que não serão utilizados ali. Isso trás mais problemas para o *client* que acaba gastando mais banda sem necessidade.
+Muitas vezes escrevemos o CSS pensando em várias formas de representar um componente, como por exemplo, botões de diferentes formas. Precisamos carregar o CSS de todos os estilos, mas não necessariamente precisamos utilizar todos os estilos em na mesma página. Com isso, acabamos carregando todos os estilos de botões que não serão utilizados ali. Isso trás mais problemas para o _client_ que acaba gastando mais banda sem necessidade.
 
-* **DIFICULDADE NA MANUTENÇÃO**
+- **DIFICULDADE NA MANUTENÇÃO**
 
 Muitas vezes quando precisamos atualizar um estilo, acabamos quebrando outro estilo em outra parte do código que não tem nada a ver com o primeiro estilo. Isso faz com que a manutenção seja muito mais custosa do que deveria ser e precisamos ficar "cavando" muito código para não corremos o risco de quebrar algo que não deveria ser quebrado.
 
@@ -47,7 +54,7 @@ Muitas vezes quando precisamos atualizar um estilo, acabamos quebrando outro est
 Os pré-processadores estão aí e ajudam muito, principalmente com a possibilidade de utilizar variáveis no CSS (recurso que antes não existia no css, mas agora existe) e com a facilidade em trabalhar com aninhamento de estilos (cascatas), mas continuaram com os problemas clássicos, além de abrir margem para **péssimas práticas**, como por exemplo o aninhamento excessivo:
 
 ```scss
-// nested
+// aninhado
 section {
   nav {
     ul {
@@ -59,7 +66,7 @@ section {
   }
 }
 
-// in line
+// em linha
 nav ul li a { ... }
 ```
 
@@ -77,33 +84,57 @@ Styled Components é uma biblioteca que, através de um conjunto de práticas, r
 
 As principais vantagens na utilização do **styled-components** são:
 
-* **CRITICAL CSS AUTOMÁTICO**
+- **CRITICAL CSS AUTOMÁTICO**
 
-O styled-components monitora quais componentes são renderizados em uma página e só injeta os estilos desses componentes, de forma totalmente automática. Isso significa que o *client* carrega a menor quantidade de código necessária para a renderização.
+O styled-components monitora quais componentes são renderizados em uma página e só injeta os estilos desses componentes, de forma totalmente automática. Isso significa que o _client_ carrega a menor quantidade de código necessária para a renderização.
 
-* **ESCOPO DEFINIDO**
+- **SEM BUGS COM NOMES DE CLASSES**
 
-Os estilos são criados para cada componente, de forma isolada. Por mais que os componentes estilizados possam ter o mesmo nome, os estilos não se colidirão pois o escopo é individual.
+O styled-components gera nome de classes únicas para cada estilo. Mesmo que elementos possuam a mesma classe, não sofrerão coesão de estilos. Por exemplo:
 
-* **REMOÇÃO DE CSS NÃO UTILIZADO**
+```jsx
+  // button.js
+  <Button className="primary" />
 
-Todo o CSS não utilizado não é carregado. Se o componente não for utilizado, todo o seu estilo será deletado.
+  // index.html
+  <button class="sc-fznLPX jckqBg primary" />
+```
 
-* **ESTILOS DINÂMICOS**
+- **REMOÇÃO DE CSS NÃO UTILIZADO**
+
+É responsabilidade do componente criar ou importar o seu estilo do arquivo de estilos. Se o componente não for utilizado, nada do seu CSS será carregado na página.
+
+Todo o componente deletado da página também terá o seu CSS deletado.
+
+- **ESTILOS DINÂMICOS**
 
 É possível alterar o estilo dos componentes através das `propriedades` e `temas` recebidos.
 
-* **VENDOR PREFIXING AUTOMÁTICO**
+Exemplo passando a propriedade `outlined` para o componente Button:
+
+```jsx
+// button.js
+<Button outlined>Edit profile</Button>
+```
+
+O componente possui a propriedade `outlined`? Se sim, então aplicar o `background-color` como transparente. Se não possuir, aplicar no `background-color` o valor da propriedade `colors.primary`, definida no arquivo `theme.js`.
+
+```jsx
+  // styles.js
+  background-color: ${(props) => props.outlined ? 'transparent' : `${props.theme.colors.primary}`};
+```
+
+- **VENDOR PREFIXING AUTOMÁTICO**
 
 Propriedades como `-webkit`, `-moz-`, `-ms` e `-o-` não precisam ser mais inseridas, pois o `styled-components` faz esse trabalho de forma automática.
 
 ![wonderful](https://media.giphy.com/media/dycoeyAvTEkaKgvcWT/giphy.gif)
 
-* **MANUTENÇÃO SIMPLIFICADA E SEM DOR**
+- **MANUTENÇÃO SIMPLIFICADA E SEM DOR**
 
 O estilo que está sendo alterado corresponde somente ao componente que o importa.
 
-- - -
+---
 
 Styled Components é incrível, não é mesmo?
 
