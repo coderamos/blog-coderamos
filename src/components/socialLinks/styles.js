@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
-export const SocialLinksContainer = styled.nav`
-  @media ${props => props.theme.mediaQueries.lg} {
-  }
-`
+export const SocialLinksContainer = styled.nav``
 
 export const SocialLinksList = styled.ul`
   align-items: center;
@@ -37,4 +34,9 @@ export const SocialLinksLink = styled.a`
 export const IconWrapper = styled.div`
   height: 30px;
   width: 30px;
+
+  @media ${props => props.theme.mediaQueries.lg} {
+    height: 24px;
+    width: 24px;
+  }
 `

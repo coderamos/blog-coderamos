@@ -31,7 +31,7 @@ const Profile = () => {
         bg={getThemeColor()}
         duration={0.6}
       >
-        <Avatar />
+        {/* <Avatar /> */}
         <s.ProfileAuthor>
           <s.ProfileName>
             Diego Ramos <s.ProfilePosition>| {position}</s.ProfilePosition>
