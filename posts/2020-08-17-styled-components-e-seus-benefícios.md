@@ -93,10 +93,10 @@ O styled-components monitora quais componentes são renderizados em uma página 
 O styled-components gera nome de classes únicas para cada estilo. Mesmo que elementos possuam a mesma classe, não sofrerão coesão de estilos. Por exemplo:
 
 ```jsx
-  // button.js
+  // button/index.js
   <Button className="primary" />
 
-  // index.html
+  // public/index.html
   <button class="sc-fznLPX jckqBg primary" />
 ```
 
@@ -110,36 +110,47 @@ Todo o componente deletado da página também terá o seu CSS deletado.
 
 É possível alterar o estilo dos componentes através das `propriedades` e `temas` recebidos.
 
-Exemplo passando a propriedade `outlined` para o componente Button:
+Exemplo:
+
+Passando a propriedade `outlined` para o componente Button:
 
 ```jsx
-// button.js
+// button/index.js
 <Button outlined>Edit profile</Button>
 ```
 
-O componente possui a propriedade `outlined`? Se sim, então aplicar o `background-color` como transparente. Se não possuir, aplicar no `background-color` o valor da propriedade `colors.primary`, definida no arquivo `theme.js`.
+Alterando o estilo o componente Button através da propriedade passada:
 
 ```jsx
-  // styles.js
-  background-color: ${(props) => props.outlined ? 'transparent' : `${props.theme.colors.primary}`};
+// button/styles.js
+export const Button = styled.button`
+  background-color: ${props =>
+    props.outlined ? 'transparent' : `${props.theme.colors.primary}`};
+`
 ```
+
+Como podemos observar, estou verificando se o componente Button possui a propriedade `outlined`. Se sim, então aplico o `background-color` como transparente. Se não possuir, aplico no `background-color` o valor da propriedade `colors.primary`, definida no arquivo `theme.js`.
+
+Ainda vou escrever como configurar um tema utilizando styled-components e colocaquei o link aqui.
 
 - **VENDOR PREFIXING AUTOMÁTICO**
 
 Propriedades como `-webkit`, `-moz-`, `-ms` e `-o-` não precisam ser mais inseridas, pois o `styled-components` faz esse trabalho de forma automática.
 
+```jsx
+/* com styled-components */
+export const Container = styled.section`
+  transition: all 2s linear;
+`
+```
+
 ```css
 /* sem styled-components */
-.exampleClass {
+.container {
   -moz-transition: all 2s linear;
   -ms-transition: all 2s linear;
   -o-transition: all 2s linear;
   -webkit-transition: all 2s linear;
-  transition: all 2s linear;
-}
-
-/* com styled-components */
-.exampleClass {
   transition: all 2s linear;
 }
 ```
@@ -157,4 +168,3 @@ Styled Components é incrível, não é mesmo?
 [Nesse repositório](https://github.com/coderamos/template-reactjs) você pode observar como eu utilizei `styled-components` de forma bem simples.
 
 Comenta aí se você já utiliza `styled-components`.
-
