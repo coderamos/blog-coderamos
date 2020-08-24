@@ -113,7 +113,7 @@ O **eslint-plugin-import-helpers** trás (até a data desse post) apenas o plugi
 Antes de tudo, você precisará ter no seu projeto o **ESLint** e o **Prettier** configurados. Se por acaso você ainda não configurou, sugiro que siga esse turorial:
 
 <div>
-   <iframe height="400" src="http://www.youtube.com/embed/TI4v4Y8yRjw" frameborder="0" allowfullscreen></iframe>
+   <iframe height="400" src="https://www.youtube.com/embed/TI4v4Y8yRjw" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Após a instalação e configuração do ESLint e Prettier, podemos seguir com os próximos passos.
