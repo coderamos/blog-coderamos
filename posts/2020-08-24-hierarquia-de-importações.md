@@ -106,14 +106,14 @@ O **eslint-plugin-import-helpers** é um pacote que foi criado pelo [Will Honey]
 
 ## Sobre o `order-imports` e como ele funciona
 
-O **eslint-plugin-import-helpers** trás (até a data desse post) apenas o plugin **order-imports**. Esse plugin permite que, seja possível configurar uma hierarquia de importações com apenas uma simples configuração arquivo `.eslintrc.js`.
+O **eslint-plugin-import-helpers** trás (até a data desse post) apenas o plugin **order-imports**. Esse plugin permite que seja possível configurar uma hierarquia de importações com apenas uma simples configuração arquivo `.eslintrc.js`.
 
 ## Fazendo acontecer
 
 Antes de tudo, você precisará ter no seu projeto o **ESLint** e o **Prettier** configurados. Se por acaso você ainda não configurou, sugiro que siga esse turorial:
 
-<div>
-   <iframe height="400" src="https://www.youtube.com/embed/TI4v4Y8yRjw" frameborder="0" allowfullscreen></iframe>
+<div align="center">
+  <iframe width="200" height="400" src="https://www.youtube.com/embed/TI4v4Y8yRjw" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Após a instalação e configuração do ESLint e Prettier, podemos seguir com os próximos passos.
@@ -126,7 +126,7 @@ Na raíz do nosso projeto **react**, vamos instalar o puglin:
 yarn add -D eslint-plugin-import-helpers
 ```
 
-Agora, no arquivo `.eslintrc.js`, vamos configurar a regra **import-helpers/order-imports**:
+Agora, vamos configurar a regra **import-helpers/order-imports** no arquivo `.eslintrc.js`:
 
 ```js
 // .eslintrc.js
@@ -155,7 +155,7 @@ rules: {
 
 Tudo pronto!
 
-Se você configou o prettier para salvar as sugestões de melhorias do ESLint, sempre que essa hierarquia não for respeitada, o VSCODE irá reoganizar os imports automaticamente assim que o arquivo for salvo.
+Se você configou o prettier para corrigir automaticamente sugestões de melhorias do ESLint, sempre que essa hierarquia não for respeitada, o VSCODE irá reoganizar os imports automaticamente assim que o arquivo for salvo.
 
 ---
 
