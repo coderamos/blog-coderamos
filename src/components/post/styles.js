@@ -4,7 +4,7 @@ export const PostHeader = styled.header`
   color: var(--text);
   margin: auto;
   max-width: 70rem;
-  padding: 5rem 5rem 0;
+  padding: 5rem 0 0;
 
   @media ${props => props.theme.mediaQueries.lg} {
     padding: 3rem 0 0;
@@ -50,7 +50,7 @@ export const PostDate = styled.p`
 export const PostContent = styled.section`
   margin: auto;
   max-width: 70rem;
-  padding: 2rem 5rem;
+  padding: 2rem 0;
 
   p,
   h1,

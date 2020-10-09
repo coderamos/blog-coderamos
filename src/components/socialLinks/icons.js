@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { Github as github } from '@styled-icons/feather/Github'
+import { LogoGithub as github } from '@styled-icons/octicons/LogoGithub'
 import { Instagram as instagram } from '@styled-icons/feather/Instagram'
-import { Linkedin as linkedin } from '@styled-icons/feather/Linkedin'
+import { LinkedinSquare as linkedin } from '@styled-icons/boxicons-logos/LinkedinSquare'
 import { Twitter as twitter } from '@styled-icons/feather/Twitter'
 
 const Icons = {

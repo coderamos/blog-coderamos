@@ -21,12 +21,8 @@ export const ProfileLink = styled(AniLink)`
 `
 
 export const ProfileAuthor = styled.h1`
-  padding-left: 0.75rem;
   display: flex;
   align-items: center;
-
-  @media ${props => props.theme.mediaQueries.lg} {
-  }
 `
 
 export const ProfileName = styled.h1`

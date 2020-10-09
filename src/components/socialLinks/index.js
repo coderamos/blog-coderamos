@@ -20,7 +20,9 @@ const SocialLinks = () => (
               title={link.label}
             >
               <s.IconWrapper>
-                <Icon />
+                <div>
+                  <Icon />
+                </div>
               </s.IconWrapper>
             </s.SocialLinksLink>
           </s.SocialLinksItem>
