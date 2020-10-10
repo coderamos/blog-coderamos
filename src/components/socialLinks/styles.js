@@ -20,7 +20,7 @@ export const SocialLinksItem = styled.li`
     padding: 0;
 
     &:first-child {
-      padding-top: 0.2rem;
+      padding-top: 0.4rem;
     }
 
     & + li {
