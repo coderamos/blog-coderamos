@@ -64,7 +64,7 @@ No exemplo acima, eu ordenei as importações da seguinte forma:
 
 - em primeiro lugar: todas as dependências que eu considero as mais **importantes** da minha aplicação. Por exemplo, todas as que iniciam com 'react' e 'redux'
 - em seguida, todas as outras bibliotecas e **módulos instalados no package.json**. Por exemplo, Prop Types, Storybook, Unform, entre outros
-- depois, todos os arquivos internos, que iniciam com o alias `~/` ou `@`. Por exemplo, `~/components`, `~/pages`, `~/styles`, `@controllers`, `@models`, entre outros. No post [Import paths personalizados e como isso pode te ajudar](https://coderamos.netlify.app/import-paths-personalizados-como-isso-pode-te-ajudar/) eu mostro como podemos criar e configurar import paths personalizados para facilitar as importações da nossa aplicação
+- depois, todos os arquivos internos, que iniciam com o alias `~/` ou `@`. Por exemplo, `~/components`, `~/pages`, `~/styles`, `@controllers`, `@models`, entre outros. No post [Import paths personalizados e como isso pode te ajudar](https://coderamos.vercel.app/import-paths-personalizados-como-isso-pode-te-ajudar/) eu mostro como podemos criar e configurar import paths personalizados para facilitar as importações da nossa aplicação
 - então, as **rotas** da minha aplicação
 - e por último, os meus **estilos**. Nesse caso, arquivos com o nome `.styled.js`
 

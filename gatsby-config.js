@@ -7,7 +7,7 @@ module.exports = {
     position: `Front End Developer`,
     description: `A blog about curriculum, jobs and programming`,
     author: `@coderamos`,
-    siteUrl: `https://coderamos.netlify.app/`,
+    siteUrl: `https://coderamos.vercel.app/`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
-        url: `http://coderamos.netlify.app/`,
+        url: `https://coderamos.vercel.app/`,
       },
     },
     {

@@ -2,7 +2,7 @@ backend:
   name: github
   repo: coderamos/blog-coderamos
   branch: master
-  site_domain: coderamos.netlify.app
+  site_domain: coderamos.vercel.app
 
 publish_mode: editorial_workflow
 media_folder: 'static/assets/images'
