@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { ThemeProvider } from 'styled-components'
 
@@ -13,6 +13,10 @@ import { GlobalStyle, theme } from '../../styles'
 import * as s from './styles'
 
 const Layout = ({ children }) => {
+  useEffect(() => {
+    document.documentElement.scrollTop = 0
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
